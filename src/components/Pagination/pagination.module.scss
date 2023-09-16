@@ -1,0 +1,96 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media screen and (max-width: 576px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .pagination-left-arrow {
+        background-color: transparent;
+        border-radius: 25px;
+        width: 45px;
+        height: 45px;
+        outline: none;
+        border: 2px solid $Highlighter3;
+        margin-right: 16px;
+        @include content-center(row);
+        transition: all 0.3s ease;
+        svg {
+            path {
+                fill: $Highlighter3;
+                transition: all 0.3s ease;
+            }
+        }
+        &:hover {
+            border: 2px solid $Primary;
+            color: $Primary;
+            transition: all 0.3s ease;
+            svg {
+                path {
+                    fill: $Primary;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+        &:disabled {
+            opacity: 0.25;
+            &:hover {
+                border: 2px solid $Highlighter3;
+                transition: all 0.3s ease;
+                svg {
+                    path {
+                        fill: $Highlighter3;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+    .pagination-right-arrow {
+        background-color: transparent;
+        border-radius: 25px;
+        width: 45px;
+        height: 45px;
+        outline: none;
+        border: 2px solid $Highlighter3;
+        @include content-center(row);
+        transition: all 0.3s ease;
+        svg {
+            path {
+                fill: $Highlighter3;
+                transition: all 0.3s ease;
+            }
+        }
+        &:hover {
+            border: 2px solid $Primary;
+            color: $Primary;
+            transition: all 0.3s ease;
+            svg {
+                path {
+                    fill: $Primary;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+        &:disabled {
+            opacity: 0.25;
+            &:hover {
+                border: 2px solid $Highlighter3;
+                transition: all 0.3s ease;
+                svg {
+                    path {
+                        fill: $Highlighter3;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}

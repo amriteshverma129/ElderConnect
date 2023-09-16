@@ -1,0 +1,134 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.FAQs {
+    .FAQs-heading {
+        @include text-72-700;
+        text-align: center;
+        color: $Highlighter3;
+        margin-bottom: 70px;
+        margin-top: 35px;
+
+        @media only screen and (max-width: 1368px) {
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 32px;
+            line-height: 48px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        @media only screen and (max-width: 576px) {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+    .FAQs-tabs {
+        @include content-center(row);
+        @include text-24-600;
+        > div {
+            border-radius: 40px;
+            height: 60px;
+            width: 700px;
+            @include content-center(row);
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            @media only screen and (max-width: 576px) {
+                height: 100px;
+            }
+            .FAQs-tab {
+                width: 100%;
+                border-radius: 40px;
+                color: $Secondary;
+                text-align: center;
+                @include flex(center, center);
+                padding: 10px 50px;
+                white-space: nowrap;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.5s ease;
+                @media only screen and (max-width: 768px) {
+                    white-space: pre-wrap;
+                    padding: 10px 20px;
+                }
+
+                &::before {
+                    content: "";
+                    height: 2px;
+                    width: 0;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 8px;
+                    background-color: $Highlighter3;
+                    transition: all 0.3s ease;
+                }
+
+                &:hover {
+                    &::before {
+                        width: calc(100% - 100px);
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .FAQs-holders {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        @media only screen and (max-width: 768px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.FAQs-skeleton {
+    .FAQs-heading-skeleton {
+        line-height: 108px;
+        width: 950px;
+        margin: 35px auto 70px auto;
+
+        @media only screen and (max-width: 1368px) {
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 80%;
+        }
+        @media only screen and (max-width: 768px) {
+            line-height: 48px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        @media only screen and (max-width: 576px) {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+    .FAQs-tabs-skeleton {
+        width: 550px;
+        height: 45px;
+        gap: 40px;
+        display: flex;
+        margin: 67px auto 75px auto;
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 32px;
+        }
+    }
+    .FAQs-holders-skeleton {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        @media only screen and (max-width: 768px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}

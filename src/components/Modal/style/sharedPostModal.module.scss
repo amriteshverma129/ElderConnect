@@ -1,0 +1,59 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.share-post-modal-user {
+    width: 768px;
+    background-color: $White;
+    font-size: 18px !important;
+    border-radius: 12px;
+    padding: 20px;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include justify-center;
+    .share-post-modal-heading-crossicon {
+        @include flex(center, space-between);
+        margin: 15px;
+        .share-post-modal-heading {
+            width: 223px;
+            height: 48px;
+            left: 30px;
+            top: 30px;
+            @include text-32-700;
+            color: $Highlighter4;
+        }
+        .share-post-modal-crossicon {
+            left: 50.01%;
+            right: 7.14%;
+            top: 19.7%;
+            bottom: 37.44%;
+        }
+    }
+    .share-post-modal-search-Box {
+        width: 95%;
+        margin: 13px;
+        background-color: $White;
+        border-radius: 20%;
+    }
+    .share-post-modal-member-selected {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 12px;
+        width: 100%;
+        height: 30px;
+        left: 30px;
+        top: 174px;
+        @include text-20-600;
+        color: $Highlighter4;
+    }
+    .share-post-modal-sendinvite-button {
+        @include btn-small;
+        @include btn-solid(142px, $Dark);
+        height: 48px;
+        margin-left: 15px;
+    }
+    @media only screen and (max-width: 576px) {
+        width: 450px;
+    }
+}

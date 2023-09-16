@@ -1,0 +1,18 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+@import "../../styles/form/form";
+
+.textAreaField {
+    padding-bottom: 12px;
+    label {
+        @include form-label;
+    }
+    textarea {
+        @include form-textarea;
+        margin-bottom: 0;
+    }
+    .error {
+        @include form-error;
+    }
+}

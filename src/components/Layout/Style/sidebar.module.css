@@ -1,0 +1,80 @@
+.sidebar {
+  color: #142c60;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 250px;
+}
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.sidebar .sidebar-title {
+  display: none;
+  padding: 15px 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #142c60;
+}
+.sidebar .sidebar-title svg path {
+  fill: #142c60;
+}
+@media only screen and (max-width: 768px) {
+  .sidebar .sidebar-title {
+    display: flex;
+  }
+}
+.sidebar .sidebar-divider1 {
+  margin: 0px auto;
+  display: none;
+}
+.sidebar .sidebar-list {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.sidebar .sidebar-list .sidebar-item,
+.sidebar .sidebar-list .sidebar-item-active {
+  padding: 16px;
+  border-left: 3px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .sidebar .sidebar-list .sidebar-item,
+  .sidebar .sidebar-list .sidebar-item-active {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #142c60;
+  }
+}
+.sidebar .sidebar-list .sidebar-item:hover, .sidebar .sidebar-list .sidebar-item.active,
+.sidebar .sidebar-list .sidebar-item-active:hover,
+.sidebar .sidebar-list .sidebar-item-active.active {
+  color: #d92d3e;
+  border-left: 3px solid #d92d3e;
+  transition: all 0.3s ease;
+}
+.sidebar .sidebar-list .sidebar-item .sidebar-link,
+.sidebar .sidebar-list .sidebar-item a,
+.sidebar .sidebar-list .sidebar-item-active .sidebar-link,
+.sidebar .sidebar-list .sidebar-item-active a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  width: 100%;
+}
+.sidebar .sidebar-list .sidebar-item .sidebar-link:hover,
+.sidebar .sidebar-list .sidebar-item a:hover,
+.sidebar .sidebar-list .sidebar-item-active .sidebar-link:hover,
+.sidebar .sidebar-list .sidebar-item-active a:hover {
+  color: #d92d3e;
+}
+.sidebar .sidebar-list .sidebar-item-active {
+  border-left: 3px solid #d92d3e;
+  color: #d92d3e;
+}/*# sourceMappingURL=sidebar.module.css.map */

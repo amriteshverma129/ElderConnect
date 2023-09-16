@@ -1,0 +1,21 @@
+{
+  "id": "purchase-membership",
+  "label": "PurchaseMembership",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "plan": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.home-heading {
+    margin: 10px auto;
+}
+.home-button {
+    border-radius: 30px;
+    background-color: $Highlighter3;
+    color: $White;
+    width: 200px;
+    @include btn-small;
+    margin: 20px auto;
+    align-self: center;
+    border: none;
+    &:disabled {
+        background-color: $Gray;
+    }
+}
+.home-event-button {
+    border-radius: 30px;
+    background-color: $Dark;
+    color: $White;
+    @include btn-small;
+    margin: 20px auto;
+    align-self: center;
+    border: none;
+    &:disabled {
+        background-color: $Gray;
+    }
+}
+
+.home-buddy-library-holder {
+    @include grid(repeat(2, 1fr), 1fr, 1fr, 20px);
+}

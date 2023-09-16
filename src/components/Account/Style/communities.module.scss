@@ -1,0 +1,13 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.account-communities {
+    .account-communities-search-Box {
+        width: 60%;
+        margin-bottom: 30px;
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+}

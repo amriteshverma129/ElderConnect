@@ -1,0 +1,80 @@
+.send-invite-modal-user {
+  width: 768px;
+  background-color: #ffffff;
+  font-size: 18px !important;
+  border-radius: 12px;
+  padding: 20px;
+  height: 80%;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.send-invite-modal-user .send-invite-modal-heading-crossicon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+}
+.send-invite-modal-user .send-invite-modal-heading-crossicon .send-invite-modal-heading {
+  width: 223px;
+  height: 48px;
+  left: 30px;
+  top: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #444444;
+}
+.send-invite-modal-user .send-invite-modal-heading-crossicon .send-invite-modal-crossicon {
+  left: 50.01%;
+  right: 7.14%;
+  top: 19.7%;
+  bottom: 37.44%;
+}
+.send-invite-modal-user .send-invite-modal-search-Box {
+  width: 95%;
+  margin: 13px;
+  background-color: #ffffff;
+  border-radius: 20%;
+}
+.send-invite-modal-user .send-invite-modal-member-selected {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  width: 209px;
+  height: 30px;
+  left: 30px;
+  top: 174px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #444444;
+}
+.send-invite-modal-user .send-invite-modal-sendinvite-button {
+  padding: 10px 16px;
+  border-radius: 30px;
+  background-color: black;
+  color: #ffffff;
+  width: 142px;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+  height: 48px;
+  margin-left: 15px;
+}
+.send-invite-modal-user .send-invite-modal-sendinvite-button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.send-invite-modal-user .send-invite-modal-sendinvite-button:hover {
+  background-color: #ffffff;
+  color: black;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 576px) {
+  .send-invite-modal-user {
+    width: 450px;
+  }
+}/*# sourceMappingURL=sendInvitemodal.module.css.map */

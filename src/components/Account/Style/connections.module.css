@@ -1,0 +1,9 @@
+.account-connections .account-connections-search-Box {
+  width: 60%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .account-connections .account-connections-search-Box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=connections.module.css.map */

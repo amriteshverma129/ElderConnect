@@ -1,0 +1,183 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.founders {
+    .founders-heading {
+        @include text-72-700;
+        text-align: center;
+        color: $Highlighter3;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        @media only screen and (max-width: 1024px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @include text-60-600;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 48px;
+            line-height: 60px;
+        }
+    }
+    .founders-list {
+        @include grid(repeat(3, 1fr), repeat(2, 1fr), 1fr, 16px);
+        .founders-card {
+            border: 1px solid $Borders;
+            padding: 40px;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+
+            @media only screen and (max-width: 576px) {
+                padding: 20px;
+            }
+
+            .founders-card-image {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                position: relative;
+                height: 195px;
+                width: 195px;
+                margin: 0 auto 30px;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .founders-card-name {
+                @include text-32-700;
+                text-align: center;
+                color: $Highlighter3;
+                margin: 0 auto 4px;
+            }
+            .founders-card-designation {
+                @include text-24-500;
+                text-align: center;
+                color: $Gray;
+                margin: 0 auto 30px;
+            }
+            .founders-card-about {
+                @include text-20-400;
+                text-align: center;
+                flex: 1;
+            }
+        }
+    }
+    .founders-help {
+        border: 1px solid $Borders;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        margin: 100px auto 50px;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (max-width: 1368px) {
+            margin: 50px auto;
+        }
+        @media screen and (max-width: 1024px) {
+            padding: 30px;
+        }
+        @media only screen and (max-width: 768px) {
+            margin: 20px auto;
+        }
+        .founders-para {
+            @include text-48-500;
+            text-align: center;
+            color: $Highlighter3;
+
+            @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 60px;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+        button {
+            @include text-18-600;
+            border-radius: 30px;
+            background-color: $Primary;
+            border: 1px solid $Primary;
+            color: $White;
+            margin: 40px auto 0;
+            align-self: center;
+            padding: 10px 50px;
+            transition: all 0.3s;
+            &:disabled {
+                background-color: $Gray;
+            }
+            &:hover {
+                background-color: $White;
+                color: $Primary;
+                transition: all 0.3s;
+            }
+            @media screen and (max-width: 576px) {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            padding: 20px;
+        }
+    }
+}
+
+.founders-skeleton {
+    .founders-heading-skeleton {
+        line-height: 108px;
+        width: 500px;
+        margin: 35px auto 35px auto;
+        @media only screen and (max-width: 1024px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 80px;
+        }
+        @media only screen and (max-width: 768px) {
+            line-height: 60px;
+            width: 300px;
+        }
+    }
+    .founders-list-skeleton {
+        @include grid(repeat(3, 1fr), repeat(2, 1fr), 1fr, 16px);
+        .founders-card-skeleton {
+            border: 1px solid $Borders;
+            padding: 40px;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+
+            @media only screen and (max-width: 576px) {
+                padding: 20px;
+            }
+
+            .founders-card-image-skeleton {
+                height: 195px;
+                width: 195px;
+                margin: 0 auto 30px;
+            }
+            .founders-card-name-skeleton {
+                line-height: 58px;
+                margin: 0 auto 4px;
+            }
+            .founders-card-designation-skeleton {
+                line-height: 46px;
+                margin: 0 auto 30px;
+            }
+        }
+    }
+    .founders-help-skeleton {
+        margin: 100px auto 50px;
+        height: 300px;
+        @media only screen and (max-width: 1368px) {
+            margin: 50px auto;
+        }
+        @media only screen and (max-width: 768px) {
+            margin: 20px auto;
+        }
+    }
+}

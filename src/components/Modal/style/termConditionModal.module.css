@@ -1,0 +1,102 @@
+.termCondition {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  padding: 16px;
+  overflow-y: auto;
+}
+.termCondition .termCondition-pop-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 24px;
+  padding: 50px;
+  width: 900px;
+  margin-bottom: 50px;
+  margin: auto;
+  background: #ffffff;
+}
+@media only screen and (max-width: 1024px) {
+  .termCondition .termCondition-pop-up {
+    width: 750px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .termCondition .termCondition-pop-up {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .termCondition .termCondition-pop-up {
+    padding: 16px;
+  }
+}
+.termCondition .termCondition-pop-up .termCondition-heading-cross-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 10px;
+  color: #142c60;
+  width: 100%;
+}
+.termCondition .termCondition-pop-up .termCondition-heading-cross-holder .termCondition-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+@media screen and (max-width: 576px) {
+  .termCondition .termCondition-pop-up .termCondition-heading-cross-holder .termCondition-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.termCondition .termCondition-pop-up .termCondition-heading-cross-holder svg {
+  cursor: pointer;
+}
+.termCondition .termCondition-pop-up .termCondition-heading-cross-holder svg path {
+  fill: #142c60;
+}
+.termCondition .termCondition-pop-up .termCondition-heading-cross-holder svg g {
+  stroke: #142c60;
+}
+.termCondition .termCondition-pop-up .termCondition-rule .termCondition-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #142c60;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .termCondition .termCondition-pop-up .termCondition-rule .termCondition-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+}
+.termCondition .termCondition-pop-up .termCondition-rule .termCondition-para {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 60px;
+  color: #142c60;
+}
+@media only screen and (max-width: 1024px) {
+  .termCondition .termCondition-pop-up .termCondition-rule .termCondition-para {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .termCondition .termCondition-pop-up .termCondition-rule .termCondition-para {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+}/*# sourceMappingURL=termConditionModal.module.css.map */

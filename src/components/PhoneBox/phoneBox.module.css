@@ -1,0 +1,124 @@
+.phoneBox {
+  padding-bottom: 12px;
+}
+.phoneBox label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 4px;
+  color: #142c60;
+  width: 100%;
+}
+.phoneBox label span {
+  color: #d92d3e;
+}
+.phoneBox label span[id=tag] {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.phoneBox .phoneBox-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #142c60;
+  position: relative;
+}
+.phoneBox .phoneBox-field div:first-child {
+  width: 15%;
+  position: static;
+  padding-bottom: 0;
+}
+.phoneBox .phoneBox-field div:first-child button {
+  border: 0px;
+  color: transparent;
+  outline: 0;
+  justify-content: flex-start;
+}
+.phoneBox .phoneBox-field div:first-child ul {
+  position: absolute;
+  width: 50%;
+  max-height: 160px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1024px) {
+  .phoneBox .phoneBox-field div:first-child ul {
+    width: 100%;
+  }
+}
+.phoneBox .phoneBox-field div:first-child ul > div {
+  position: sticky !important;
+  width: 100% !important;
+}
+.phoneBox .phoneBox-field div:first-child ul > div input {
+  border-radius: 10px;
+  border: 1px solid #142c60;
+  color: #444444;
+}
+.phoneBox .phoneBox-field div:first-child ul li {
+  color: #444444;
+}
+@media screen and (max-width: 768px) {
+  .phoneBox .phoneBox-field div:first-child {
+    width: 12%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .phoneBox .phoneBox-field div:first-child {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .phoneBox .phoneBox-field div:first-child {
+    width: 25%;
+  }
+}
+.phoneBox .phoneBox-field div:last-child {
+  width: 85%;
+}
+.phoneBox .phoneBox-field div:last-child input {
+  color: #444444;
+  width: 100%;
+  padding: 10px 16px 10px 4px;
+  border: 0px;
+  border-radius: 30px;
+  outline: 0px;
+}
+.phoneBox .phoneBox-field div:last-child input:focus {
+  border: 0px;
+}
+@media screen and (max-width: 768px) {
+  .phoneBox .phoneBox-field div:last-child {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .phoneBox .phoneBox-field div:last-child {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .phoneBox .phoneBox-field div:last-child {
+    width: 85%;
+  }
+}
+.phoneBox .phoneBox-note {
+  font-size: 16px;
+  color: #444444;
+  text-align: left;
+  display: block;
+  margin-top: 8px;
+}
+.phoneBox .phoneBox-error {
+  color: #d92d3e;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}/*# sourceMappingURL=phoneBox.module.css.map */

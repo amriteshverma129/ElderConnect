@@ -1,0 +1,90 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.library-search-filter-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    gap: 10px;
+    @media only screen and (max-width: 768px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .library-heading {
+        @include section-heading;
+        color: $Highlighter3;
+        @media only screen and (max-width: 576px) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .library-search-box {
+        width: 368px;
+        height: 48px;
+        margin-left: auto;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    .library-dropdown-or-view-box {
+        display: flex;
+        @media only screen and (max-width: 768px) {
+            justify-content: space-between;
+        }
+        .library-dropdown {
+            border-radius: 30px;
+            border: 1px $Highlighter3 solid;
+            margin-left: 24px;
+            @include font(18px, 400, 32px);
+            @media only screen and (max-width: 768px) {
+                margin-left: 0px;
+            }
+            .library-dropdown2 {
+                border: none;
+                border-radius: 30px;
+                padding: 10px 0px 10px 15px;
+                color: $Highlighter3;
+                width: 200px;
+                &:focus-visible {
+                    border: none;
+                    outline: 0px;
+                }
+            }
+        }
+        .library-view-box {
+            width: 100px;
+            height: 48px;
+            margin-left: 24px;
+            @include flex(center, space-between);
+            border: 1px solid $Highlighter3;
+            border-radius: 40px;
+            @media only screen and (max-width: 768px) {
+                margin-left: 0px;
+            }
+            > div {
+                width: 54px;
+                height: 48px;
+                @include flex(center, center);
+                cursor: pointer;
+                &:first-child {
+                    border-bottom-left-radius: 40px;
+                    border-top-left-radius: 40px;
+                }
+                &:last-child {
+                    border-bottom-right-radius: 40px;
+                    border-top-right-radius: 40px;
+                }
+            }
+            .library-view-box-active {
+                background-color: $Highlighter3;
+            }
+        }
+    }
+}

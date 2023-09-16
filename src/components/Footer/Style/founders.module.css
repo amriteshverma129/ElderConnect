@@ -1,0 +1,237 @@
+.founders .founders-heading {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 108px;
+  text-align: center;
+  color: #142c60;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 1024px) {
+  .founders .founders-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .founders .founders-heading {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+.founders .founders-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+@media only screen and (max-width: 1024px) {
+  .founders .founders-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .founders .founders-list {
+    grid-template-columns: 1fr;
+  }
+}
+.founders .founders-list .founders-card {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  padding: 40px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 576px) {
+  .founders .founders-list .founders-card {
+    padding: 20px;
+  }
+}
+.founders .founders-list .founders-card .founders-card-image {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  height: 195px;
+  width: 195px;
+  margin: 0 auto 30px;
+}
+.founders .founders-list .founders-card .founders-card-image img {
+  border-radius: 50%;
+}
+.founders .founders-list .founders-card .founders-card-name {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: #142c60;
+  margin: 0 auto 4px;
+}
+.founders .founders-list .founders-card .founders-card-designation {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  color: rgba(34, 34, 34, 0.5);
+  margin: 0 auto 30px;
+}
+.founders .founders-list .founders-card .founders-card-about {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  flex: 1;
+}
+.founders .founders-help {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin: 100px auto 50px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 1368px) {
+  .founders .founders-help {
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .founders .founders-help {
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .founders .founders-help {
+    margin: 20px auto;
+  }
+}
+.founders .founders-help .founders-para {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: center;
+  color: #142c60;
+}
+@media screen and (max-width: 768px) {
+  .founders .founders-help .founders-para {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .founders .founders-help .founders-para {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.founders .founders-help button {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 30px;
+  background-color: #d92d3e;
+  border: 1px solid #d92d3e;
+  color: #ffffff;
+  margin: 40px auto 0;
+  align-self: center;
+  padding: 10px 50px;
+  transition: all 0.3s;
+}
+.founders .founders-help button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+}
+.founders .founders-help button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 576px) {
+  .founders .founders-help button {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .founders .founders-help {
+    padding: 20px;
+  }
+}
+
+.founders-skeleton .founders-heading-skeleton {
+  line-height: 108px;
+  width: 500px;
+  margin: 35px auto 35px auto;
+}
+@media only screen and (max-width: 1024px) {
+  .founders-skeleton .founders-heading-skeleton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .founders-skeleton .founders-heading-skeleton {
+    line-height: 60px;
+    width: 300px;
+  }
+}
+.founders-skeleton .founders-list-skeleton {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+@media only screen and (max-width: 1024px) {
+  .founders-skeleton .founders-list-skeleton {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .founders-skeleton .founders-list-skeleton {
+    grid-template-columns: 1fr;
+  }
+}
+.founders-skeleton .founders-list-skeleton .founders-card-skeleton {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  padding: 40px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 576px) {
+  .founders-skeleton .founders-list-skeleton .founders-card-skeleton {
+    padding: 20px;
+  }
+}
+.founders-skeleton .founders-list-skeleton .founders-card-skeleton .founders-card-image-skeleton {
+  height: 195px;
+  width: 195px;
+  margin: 0 auto 30px;
+}
+.founders-skeleton .founders-list-skeleton .founders-card-skeleton .founders-card-name-skeleton {
+  line-height: 58px;
+  margin: 0 auto 4px;
+}
+.founders-skeleton .founders-list-skeleton .founders-card-skeleton .founders-card-designation-skeleton {
+  line-height: 46px;
+  margin: 0 auto 30px;
+}
+.founders-skeleton .founders-help-skeleton {
+  margin: 100px auto 50px;
+  height: 300px;
+}
+@media only screen and (max-width: 1368px) {
+  .founders-skeleton .founders-help-skeleton {
+    margin: 50px auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .founders-skeleton .founders-help-skeleton {
+    margin: 20px auto;
+  }
+}/*# sourceMappingURL=founders.module.css.map */

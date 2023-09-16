@@ -1,0 +1,108 @@
+.needHelp-modal-holder {
+  width: 620px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.needHelp-modal-holder .needHelp-modal-heading-cross-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.needHelp-modal-holder .needHelp-modal-heading-cross-holder .needHelp-modal-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #444444;
+}
+@media only screen and (max-width: 576px) {
+  .needHelp-modal-holder .needHelp-modal-heading-cross-holder .needHelp-modal-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.needHelp-modal-holder .needHelp-modal-heading-cross-holder svg {
+  cursor: pointer;
+}
+.needHelp-modal-holder .needHelp-modal-heading-cross-holder svg g {
+  stroke: #142c60;
+}
+.needHelp-modal-holder .needHelp-modal-heading-cross-holder svg path {
+  fill: #142c60;
+}
+.needHelp-modal-holder .needHelp-modal-para {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #444444;
+}
+.needHelp-modal-holder .needHelp-modal-para span:first-child {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+@media only screen and (max-width: 576px) {
+  .needHelp-modal-holder .needHelp-modal-para {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.needHelp-modal-holder .needHelp-modal-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 280px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-top: 20px;
+}
+.needHelp-modal-holder .needHelp-modal-btn:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.needHelp-modal-holder .needHelp-modal-btn:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 576px) {
+  .needHelp-modal-holder .needHelp-modal-btn {
+    border-radius: 30px;
+    background-color: #142c60;
+    color: #ffffff;
+    width: 100%;
+    border: 1px solid #142c60;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  .needHelp-modal-holder .needHelp-modal-btn:disabled {
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 0px;
+    pointer-events: none;
+  }
+  .needHelp-modal-holder .needHelp-modal-btn:hover {
+    background-color: #ffffff;
+    color: #142c60;
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .needHelp-modal-holder {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .needHelp-modal-holder {
+    width: 95%;
+  }
+}/*# sourceMappingURL=needHelpModal.module.css.map */

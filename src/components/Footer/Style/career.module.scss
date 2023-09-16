@@ -1,0 +1,337 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.career {
+    .career-header-title {
+        text-align: center;
+        margin-top: 35px;
+        @media screen and (max-width: 1024px) {
+            margin-top: 20px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            @include text-72-700;
+            color: $Highlighter3;
+            margin: 0;
+            @media screen and (max-width: 1024px) {
+                font-size: 60px;
+                line-height: 70px;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 32px;
+                line-height: 48px;
+            }
+        }
+    }
+    .career-heroPanel1 {
+        @include content-center(column);
+        margin-bottom: 100px;
+        @media screen and (max-width: 1368px) {
+            margin-bottom: 50px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 576px) {
+            margin-bottom: 0;
+        }
+        .career-heroPanel1-heading {
+            @include text-48-500;
+            color: $Highlighter3;
+            margin-bottom: 70px;
+            text-align: center;
+            @media screen and (max-width: 1368px) {
+                margin-bottom: 50px;
+            }
+            @media only screen and (max-width: 768px) {
+                font-size: 48px;
+                line-height: 72px;
+                margin-bottom: 24px;
+            }
+            @media only screen and (max-width: 576px) {
+                font-size: 32px;
+                line-height: 48px;
+                br {
+                    display: none;
+                }
+            }
+        }
+        .career-heroPanel1-para {
+            @include font(24px, 400, 45px);
+            text-align: center;
+            margin-bottom: 70px;
+            color: $Highlighter3;
+            span {
+                color: $Primary;
+            }
+            @media screen and (max-width: 1368px) {
+                margin-bottom: 50px;
+            }
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 20px;
+            }
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+        .career-heroPanel1-image {
+            padding: 20px;
+            width: 600px;
+            height: 450px;
+            position: relative;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                height: 400px;
+            }
+            @media only screen and (max-width: 576px) {
+                padding: 0;
+                height: 300px;
+            }
+        }
+    }
+    .career-heroPanel2 {
+        @include flex(flex-start, space-between);
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        @media only screen and (max-width: 768px) {
+            gap: 0;
+        }
+
+        .career-heroPanel2-content1 {
+            width: 50%;
+            @media only screen and (max-width: 576px) {
+                padding: 20px 0 0 0;
+            }
+            .career-heroPanel2-heading {
+                @include section-heading;
+                margin-bottom: 20px;
+                color: $Highlighter3;
+            }
+            .career-heroPanel2-para {
+                @include font(24px, 400, 45px);
+                margin-bottom: 100px;
+                color: $Highlighter3;
+                @media screen and (max-width: 1368px) {
+                    margin-bottom: 50px;
+                }
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 20px;
+                }
+                @media only screen and (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            .career-heroPanel2-image {
+                width: 100%;
+                height: 400px;
+                position: relative;
+                @media only screen and (max-width: 768px) {
+                    padding: 0;
+                    height: 300px;
+                }
+                @media only screen and (max-width: 576px) {
+                    padding: 0;
+                    height: 250px;
+                }
+            }
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        .career-heroPanel2-content2 {
+            width: 50%;
+            @media only screen and (max-width: 576px) {
+                padding: 20px 0 0 0;
+            }
+            .career-heroPanel2-title {
+                margin-bottom: 24px;
+                @include text-32-700;
+                color: $Primary;
+                @media only screen and (max-width: 576px) {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 16px;
+                }
+            }
+            .career-heroPanel2-list {
+                @include font(24px, 400, 45px);
+                color: $Highlighter3;
+                margin: 0 0 85px 0;
+                @media screen and (max-width: 1368px) {
+                    margin: 0 0 50px 0;
+                }
+                @media screen and (max-width: 768px) {
+                    margin: 0 0 20px 0;
+                }
+                @media only screen and (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.career-skeleton {
+    .career-header-title-skeleton {
+        line-height: 100px;
+        width: 20%;
+        margin: 0 auto 30px;
+        @media screen and (max-width: 1024px) {
+            line-height: 70px;
+            margin-top: 20px;
+            margin-bottom: 24px;
+            width: 30%;
+        }
+        @media screen and (max-width: 576px) {
+            line-height: 48px;
+            width: 50%;
+        }
+    }
+    .career-heroPanel1-skeleton {
+        @include content-center(column);
+        margin-bottom: 100px;
+        @media screen and (max-width: 1368px) {
+            margin-bottom: 50px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 576px) {
+            margin-bottom: 0;
+        }
+        .career-heroPanel1-heading-skeleton {
+            line-height: 72px;
+            width: 40%;
+            margin-bottom: 70px;
+            text-align: center;
+            @media screen and (max-width: 1368px) {
+                margin-bottom: 50px;
+                width: 50%;
+            }
+            @media only screen and (max-width: 768px) {
+                line-height: 72px;
+                margin-bottom: 24px;
+                width: 60%;
+            }
+            @media only screen and (max-width: 576px) {
+                line-height: 48px;
+                width: 80%;
+            }
+        }
+        .career-heroPanel1-para-skeleton {
+            width: 100%;
+            line-height: 45px;
+            text-align: center;
+            margin-bottom: 70px;
+            @media screen and (max-width: 1368px) {
+                margin-bottom: 50px;
+            }
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 20px;
+            }
+            @media only screen and (max-width: 576px) {
+                line-height: 32px;
+            }
+        }
+        .career-heroPanel1-image-skeleton {
+            padding: 20px;
+            width: 600px;
+            height: 450px;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                height: 400px;
+            }
+            @media only screen and (max-width: 576px) {
+                height: 300px;
+            }
+        }
+    }
+    .career-heroPanel2-skeleton {
+        @include flex(flex-start, space-between);
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 20px;
+        @media only screen and (max-width: 768px) {
+            gap: 0;
+        }
+        .career-heroPanel2-content1-skeleton {
+            width: 50%;
+            .career-heroPanel2-heading-skeleton {
+                @include section-heading;
+                margin-bottom: 20px;
+                line-height: 90px;
+            }
+            .career-heroPanel2-para-skeleton {
+                line-height: 45px;
+                margin-bottom: 100px;
+                @media screen and (max-width: 1368px) {
+                    margin-bottom: 50px;
+                }
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 20px;
+                }
+                @media only screen and (max-width: 576px) {
+                    line-height: 32px;
+                }
+            }
+            .career-heroPanel2-image-skeleton {
+                width: 100%;
+                height: 400px;
+                @media only screen and (max-width: 768px) {
+                    height: 300px;
+                }
+                @media only screen and (max-width: 576px) {
+                    height: 250px;
+                }
+            }
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        .career-heroPanel2-content2-skeleton {
+            width: 50%;
+            @media only screen and (max-width: 576px) {
+                padding: 20px 0 0 0;
+            }
+            .career-heroPanel2-title-skeleton {
+                color: $Primary;
+                line-height: 60px;
+                @media only screen and (max-width: 576px) {
+                    line-height: 50px;
+                    margin-bottom: 16px;
+                }
+            }
+            .career-heroPanel2-list-skeleton {
+                line-height: 45px;
+                margin: 0 0 85px 0;
+                @media screen and (max-width: 1368px) {
+                    margin: 0 0 50px 0;
+                }
+                @media screen and (max-width: 768px) {
+                    margin: 0 0 20px 0;
+                }
+                @media only screen and (max-width: 576px) {
+                    line-height: 32px;
+                }
+            }
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+}

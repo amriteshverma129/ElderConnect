@@ -1,0 +1,118 @@
+.updateEmail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  padding: 16px;
+  overflow-y: auto;
+}
+.updateEmail .updateEmail-pop-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 24px;
+  padding: 30px;
+  width: 575px;
+  margin-bottom: 50px;
+  margin: auto;
+  background: #ffffff;
+}
+@media only screen and (max-width: 1024px) {
+  .updateEmail .updateEmail-pop-up {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .updateEmail .updateEmail-pop-up {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .updateEmail .updateEmail-pop-up {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .updateEmail .updateEmail-pop-up {
+    width: 100%;
+  }
+}
+.updateEmail .updateEmail-pop-up .updateEmail-heading-cross-holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 10px;
+  color: #142c60;
+  width: 100%;
+}
+.updateEmail .updateEmail-pop-up .updateEmail-heading-cross-holder .updateEmail-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  padding-right: 16px;
+  flex: 1;
+}
+@media screen and (max-width: 576px) {
+  .updateEmail .updateEmail-pop-up .updateEmail-heading-cross-holder .updateEmail-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.updateEmail .updateEmail-pop-up .updateEmail-heading-cross-holder svg {
+  cursor: pointer;
+  margin-top: 10px;
+}
+.updateEmail .updateEmail-pop-up .updateEmail-heading-cross-holder svg path {
+  fill: #142c60;
+}
+.updateEmail .updateEmail-pop-up .updateEmail-heading-cross-holder svg g {
+  stroke: #142c60;
+}
+.updateEmail .updateEmail-pop-up .infusion-form {
+  width: 100%;
+}
+.updateEmail .updateEmail-pop-up .infusion-form .infusion-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.updateEmail .updateEmail-pop-up .infusion-form .infusion-submit button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  border-radius: 30px;
+  background-color: #d92d3e;
+  color: #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #d92d3e;
+  transition: all 0.3s ease;
+  padding: 10px 50px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.updateEmail .updateEmail-pop-up .infusion-form .infusion-submit button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.updateEmail .updateEmail-pop-up .infusion-form .infusion-submit button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .updateEmail .updateEmail-pop-up .infusion-form .infusion-submit button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=updateEmailModal.module.css.map */

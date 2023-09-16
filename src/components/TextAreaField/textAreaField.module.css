@@ -1,0 +1,40 @@
+.textAreaField {
+  padding-bottom: 12px;
+}
+.textAreaField label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 4px;
+  color: #142c60;
+  width: 100%;
+}
+.textAreaField label span {
+  color: #d92d3e;
+}
+.textAreaField label span[id=tag] {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.textAreaField textarea {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #444444;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid #142c60;
+  resize: none;
+  margin-bottom: 0;
+}
+.textAreaField .error {
+  color: #d92d3e;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}/*# sourceMappingURL=textAreaField.module.css.map */

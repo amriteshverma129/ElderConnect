@@ -1,0 +1,119 @@
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings .settings-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 800px;
+  position: relative;
+}
+.settings .settings-card h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #142c60;
+}
+@media screen and (max-width: 768px) {
+  .settings .settings-card h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
+.settings .settings-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #444444;
+}
+@media screen and (max-width: 768px) {
+  .settings .settings-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+.settings .settings-card .settings-toggle-switch {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .settings .settings-card .settings-toggle-switch {
+    position: static;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .settings .settings-card {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .settings .settings-card {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .settings .settings-card {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.settings-skeleton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings-skeleton .settings-card-skeleton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 800px;
+  position: relative;
+}
+.settings-skeleton .settings-card-skeleton .settings-card-text-skeleton {
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .settings-skeleton .settings-card-skeleton .settings-card-text-skeleton {
+    width: 100%;
+  }
+}
+.settings-skeleton .settings-card-skeleton .settings-toggle-switch-skeleton {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .settings-skeleton .settings-card-skeleton .settings-toggle-switch-skeleton {
+    position: static;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .settings-skeleton .settings-card-skeleton {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .settings-skeleton .settings-card-skeleton {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .settings-skeleton .settings-card-skeleton {
+    flex-direction: column;
+    width: 100%;
+  }
+}/*# sourceMappingURL=settings.module.css.map */

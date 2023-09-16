@@ -1,0 +1,68 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.post-creator-modal-holder {
+    width: 650px;
+    background-color: $WhiteSmoke;
+    font-size: 18px !important;
+    border-radius: 12px;
+    padding: 20px;
+    height: auto;
+    @include justify-center;
+    .post-creator-modal-heading-cross-holder {
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.4px;
+        color: $Secondary;
+        font-size: 22px;
+    }
+    .post-creator-modal-title-avatar-holder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px auto;
+        .post-creator-modal-title {
+            margin-left: 20px;
+            text-transform: capitalize;
+        }
+    }
+    .post-creator-modal-input-holder {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .post-creator-modal-input {
+        margin: 10px auto;
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 18px;
+    }
+    .post-creator-modal-upload {
+        width: 100%;
+        height: 300px;
+        border-radius: 12px;
+        border: 1px solid $Gray;
+    }
+    .post-creator-modal-icons {
+        padding: 20px 0px;
+        span {
+            padding: 10px 10px;
+            border-radius: 20px;
+            background-color: $Borders;
+            margin-right: 10px;
+        }
+    }
+    .post-creator-modal-button {
+        @include btn-small;
+        @include btn-solid(110px, $Dark);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+    }
+}

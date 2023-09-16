@@ -1,0 +1,9 @@
+.account-following .account-following-search-Box {
+  width: 60%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .account-following .account-following-search-Box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=following.module.css.map */

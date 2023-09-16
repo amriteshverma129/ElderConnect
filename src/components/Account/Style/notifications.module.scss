@@ -1,0 +1,288 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.account-notifications {
+    .account-notifications-buttons {
+        margin-bottom: 50px;
+        display: flex;
+        gap: 24px;
+        button {
+            height: 48px;
+            @include text-18-600;
+        }
+        .notifications-all-button {
+            @include btn-outline(63px, $Highlighter3, 0px);
+        }
+        .notifications-all-active-button {
+            @include btn-solid(63px, $Highlighter3);
+        }
+        .notifications-Unread-button {
+            @include btn-outline(146px, $Highlighter3, 0px);
+        }
+        .notifications-Unread-active-button {
+            @include btn-solid(146px, $Highlighter3);
+        }
+        @media only screen and (max-width: 576px) {
+            gap: 16px;
+        }
+    }
+    .account-notifications-events-all-details {
+        display: flex;
+        gap: 75px;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        margin-bottom: 20px;
+        .account-notifications-events-message-and-avatar-holder {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .account-notification-avatar-holder {
+                position: relative;
+                span {
+                    background: $Primary;
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    top: 5px;
+                    right: 10px;
+                }
+            }
+            .account-notifications-message {
+                margin-left: 20px;
+                margin-top: 10px;
+                > div {
+                    @include text-24-600;
+                    color: $Highlighter3;
+                    .account-notification-event-topic {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        text-decoration-line: underline;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            color: $Primary;
+                            text-decoration-color: $Primary;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                    .account-notification-time {
+                        color: $Primary;
+                        display: inline-block;
+                        @include font(20px, 600, 30px);
+                        @media only screen and (max-width: 576px) {
+                            @include text-18-500;
+                        }
+                    }
+                    .account-notification-time2 {
+                        display: inline-block;
+                        @include font(20px, 600, 30px);
+                        @media only screen and (max-width: 576px) {
+                            @include text-18-500;
+                        }
+                    }
+                    @media only screen and (max-width: 576px) {
+                        @include text-18-600;
+                    }
+                }
+                > span {
+                    @include font(16px, 500, 26px);
+                    @media only screen and (max-width: 576px) {
+                        @include font(14px, 500, 24px);
+                    }
+                }
+            }
+        }
+        .account-notifications-event-button {
+            height: 56px;
+            @include btn-solid(163px, $Highlighter3);
+            @include text-18-600;
+            @media only screen and (max-width: 1285px) {
+                @include btn-solid(100%, $Highlighter3);
+                height: 48px;
+            }
+            @media only screen and (max-width: 1024px) {
+                @include btn-solid(163px, $Highlighter3);
+                height: 56px;
+            }
+            @media only screen and (max-width: 840px) {
+                @include btn-solid(100%, $Highlighter3);
+                height: 48px;
+            }
+        }
+        @media only screen and (max-width: 1285px) {
+            flex-direction: column;
+            gap: 8px;
+        }
+        @media only screen and (max-width: 1024px) {
+            flex-direction: row;
+            gap: 75px;
+        }
+        @media only screen and (max-width: 840px) {
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    .account-notifications-view-more-button {
+        @include btn-solid(150px, $Highlighter3);
+        @include text-18-600;
+        @include btn-normal;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+.account-notifications2 {
+    @include flex(center, center);
+    flex-direction: column;
+    > div {
+        @include text-24-600;
+        width: 800px;
+        text-align: center;
+        color: $Highlighter3;
+        @media only screen and (max-width: 1024px) {
+            @include text-18-600;
+            width: 700px;
+        }
+        @media only screen and (max-width: 768px) {
+            @include text-18-600;
+            width: 100%;
+        }
+    }
+
+    button {
+        @include btn-normal;
+        @include btn-solid(200px, $Highlighter3);
+        @include text-18-500;
+        margin-top: 20px;
+    }
+}
+
+//notification Skeleton
+.account-notifications-skeleton {
+    .account-notifications-buttons-skeleton {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 50px;
+    }
+    .account-notifications-events-all-details-skeleton {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        padding-bottom: 25px;
+        // border-bottom: 5px solid $WhiteSmoke;
+        margin-bottom: 20px;
+        .account-notifications-message-skeleton {
+            width: 100%;
+        }
+    }
+}
+
+//notification bar
+
+.notificationBar-container {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0px 130px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    @media only screen and (max-width: 1800px) {
+        padding: 0px 60px;
+    }
+    @media only screen and (max-width: 1400px) {
+        padding: 0px 6px;
+    }
+    /* Style the indicators */
+
+    .notificationBar {
+        background-color: $Primary;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: $White;
+        padding: 10px 20px;
+        border-radius: 5px;
+        flex: 1;
+        @include flex(center, space-between);
+        .notificationBar-title {
+            @include text-32-700;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            flex: 1;
+        }
+        .notificationBar-timer-btn-cross-container {
+            @include flex(center, space-evenly);
+            > div {
+                margin-left: 20px;
+                :first-child {
+                    @include text-18-600;
+                }
+                @media screen and (max-width: 768px) {
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            button {
+                @include btn-outline(200px, $Primary);
+                @include btn-normal;
+                @include text-18-600;
+                @media screen and (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+            .notificationBar-cross {
+                cursor: pointer;
+                svg {
+                    height: 40px;
+                    width: 40px;
+                    color: $White;
+                    margin-bottom: 6px;
+                    path {
+                        fill: $White;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    margin: 0;
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                    width: auto;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-direction: column;
+            padding: 30px 20px 10px;
+            position: relative;
+            .notificationBar-title {
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}

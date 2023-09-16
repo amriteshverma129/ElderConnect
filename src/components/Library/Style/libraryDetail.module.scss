@@ -1,0 +1,290 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.library-detail-holder {
+    @include grid(2fr 1fr, 1fr, 1fr, 60px);
+    @media only screen and (max-width: 1024px) {
+        grid-gap: 0px;
+    }
+
+    .library-detail {
+        .library-detail-content {
+            margin: 24px auto;
+            .library-detail-para2 {
+                @include text-20-500;
+                color: $Highlighter3;
+                .library-detail-link {
+                    color: rgb(53, 53, 237);
+                }
+                .heading-left-arrow {
+                    display: none;
+                    @media only screen and (max-width: 1024px) {
+                        border: solid $Secondary;
+                        border-width: 0 2px 2px 0;
+                        display: inline-block;
+                        padding: 5px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        transform: rotate(135deg);
+                        -webkit-transform: rotate(135deg);
+                    }
+                }
+            }
+            .library-detail-title-like {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .library-detail-title {
+                    @include text-32-700;
+                    color: $Highlighter3;
+                    @media screen and (max-width: 768px) {
+                        margin-top: 0;
+                    }
+                    @media screen and (max-width: 576px) {
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+                }
+                .library-detail-like {
+                    background-color: $Highlighter3;
+                    color: $White;
+                    border-radius: 30px;
+                    align-self: flex-start;
+                    padding: 5px 15px;
+                    margin-top: 6px;
+                    @include flex(center, center);
+                    cursor: pointer;
+                    span {
+                        &:last-child {
+                            padding-left: 10px;
+                        }
+                    }
+                    @media screen and (max-width: 768px) {
+                        margin-top: 0;
+                    }
+                }
+                @media only screen and (max-width: 768px) {
+                    flex-direction: column;
+                    .library-detail-like {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            .library-detail-date {
+                display: flex;
+                align-items: center;
+                @include text-20-700;
+                color: $Primary;
+                .library-detail-line {
+                    width: 2px;
+                    height: 20px;
+                    display: inline-block;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    background-color: gray;
+                    @media only screen and (max-width: 600px) {
+                        display: none;
+                    }
+                }
+                @media only screen and (max-width: 600px) {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+                @media only screen and (max-width: 576px) {
+                    font-size: 18px;
+                }
+            }
+            .library-detail-para {
+                margin: 24px auto;
+                @include font(18px, 500, 34px);
+                color: $Highlighter4;
+                .library-detail-link {
+                    color: rgb(53, 53, 237);
+                }
+
+                + div {
+                    @include text-20-700;
+                    color: $Highlighter4;
+                }
+            }
+        }
+        .library-detail-video-wrapper {
+            height: 550px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: $Dark;
+            @include flex(center, center);
+            @media only screen and (max-width: 1024px) {
+                height: 450px;
+            }
+            @media only screen and (max-width: 768px) {
+                height: 280px;
+            }
+        }
+        .library-detail-video {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            border-radius: 10px;
+            background-color: $Dark;
+            @include flex(center, center);
+            // @media only screen and (max-width: 1024px) {
+            //     height: 450px;
+            // }
+            // @media only screen and (max-width: 768px) {
+            //     height: 280px;
+            // }
+        }
+        .library-detail-image2 {
+            height: 550px;
+            width: 100%;
+            position: relative;
+            img {
+                border-radius: 10px;
+            }
+            @media only screen and (max-width: 1024px) {
+                height: 450px;
+            }
+            @media only screen and (max-width: 768px) {
+                height: 280px;
+            }
+        }
+    }
+
+    .library-detail-related-videos {
+        .library-detail-heading {
+            @include text-32-700;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            color: $Highlighter3;
+            @media screen and (max-width: 576px) {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        .library-detail-related-videos2 {
+            @media only screen and (max-width: 1024px) and (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+            }
+            .library-detail-card {
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                margin-bottom: 32px;
+                cursor: pointer;
+                @media only screen and (max-width: 1024px) {
+                    flex-direction: column;
+                }
+                .library-detail-image {
+                    height: 116px;
+                    min-width: 116px;
+                    width: 116px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    position: relative;
+                    img {
+                        border-radius: 10px;
+                    }
+                    @media only screen and (max-width: 1024px) {
+                        height: 250px;
+                        width: 100%;
+                    }
+                }
+                .library-detail-content {
+                    padding-left: 15px;
+                    @media only screen and (max-width: 1024px) {
+                        padding: 15px 15px 15px 0;
+                    }
+                    @media only screen and (max-width: 576px) {
+                        padding: 15px 15px 0 0;
+                    }
+                    .library-detail-title {
+                        @include text-20-700;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        color: $Highlighter3;
+                        margin-bottom: 2px;
+                        transition: all 0.3s ease;
+                        text-decoration: underline;
+                        text-decoration-color: $White;
+                        @media only screen and (max-width: 1024px) {
+                            font-size: 32px;
+                            line-height: 48px;
+                        }
+                        @media screen and (max-width: 576px) {
+                            font-size: 24px;
+                            line-height: 36px;
+                        }
+                    }
+                    .library-detail-view {
+                        @include font(18px, 600, 28px);
+                        color: $Highlighter4;
+                        @media screen and (max-width: 576px) {
+                            font-size: 18px;
+                        }
+                    }
+                    .library-detail-view2 {
+                        @include text-20-400;
+                        color: $Highlighter4;
+                    }
+                }
+
+                &:hover {
+                    .library-detail-content {
+                        .library-detail-title {
+                            text-decoration-color: $Highlighter3;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+}
+
+.library-detail-holder-skeleton {
+    @include grid(2fr 1fr, 1fr, 1fr, 60px);
+    @media only screen and (max-width: 1024px) {
+        grid-gap: 0px;
+    }
+    .library-detail-skeleton {
+        .library-detail-content-skeleton {
+            margin: 24px auto;
+            .library-detail-title-like-skeleton {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                @media only screen and (max-width: 768px) {
+                    flex-direction: column;
+                    .library-detail-like-skeleton {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            .library-detail-para-skeleton {
+                margin: 24px auto;
+            }
+        }
+        .library-detail-video-wrapper-skeleton {
+            height: 550px;
+            width: 100%;
+            border-radius: 10px;
+            @media only screen and (max-width: 1024px) {
+                height: 450px;
+            }
+            @media only screen and (max-width: 768px) {
+                height: 280px;
+            }
+        }
+    }
+}

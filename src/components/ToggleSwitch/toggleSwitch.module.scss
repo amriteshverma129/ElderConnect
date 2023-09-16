@@ -1,0 +1,31 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+
+.toggle-switch-off {
+    height: 30px;
+    width: 50px;
+    background-color: $Borders;
+    padding: 3px;
+    border-radius: 50px;
+    .toggle-slider {
+        height: 24px;
+        width: 24px;
+        background-color: $White;
+        border-radius: 50%;
+    }
+}
+.toggle-switch-on {
+    height: 30px;
+    width: 50px;
+    background-color: $Highlighter3;
+    padding: 3px;
+    border-radius: 50px;
+    .toggle-slider {
+        height: 24px;
+        width: 24px;
+        background-color: $White;
+        border-radius: 50%;
+        margin-left: auto;
+    }
+}

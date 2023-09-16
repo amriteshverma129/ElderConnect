@@ -1,0 +1,45 @@
+.joinEventButton {
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 250px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  padding: 10px 25px;
+}
+.joinEventButton:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.joinEventButton:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 576px) {
+  .joinEventButton {
+    border-radius: 30px;
+    background-color: #142c60;
+    color: #ffffff;
+    width: 100%;
+    border: 1px solid #142c60;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .joinEventButton:disabled {
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 0px;
+    pointer-events: none;
+  }
+  .joinEventButton:hover {
+    background-color: #ffffff;
+    color: #142c60;
+    transition: all 0.3s ease;
+  }
+}/*# sourceMappingURL=joinEventButton.module.css.map */

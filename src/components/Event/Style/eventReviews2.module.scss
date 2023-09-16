@@ -1,0 +1,88 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.event-review-holder {
+    .event-review-rating {
+        @include font(72px, 700, 108px);
+        @media only screen and (max-width: 576px) {
+            font-size: 64px;
+            line-height: 95px;
+        }
+    }
+    .event-review-count-star-holder {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .event-review-count {
+            margin-left: 20px;
+            text-decoration: underline;
+            @include text-20-600;
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+            }
+        }
+    }
+    .event-reviews {
+        @include grid(1fr, 1fr, 1fr, 40px);
+        margin-top: 40px;
+        @media only screen and (max-width: 1024px) {
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+        @media only screen and (max-width: 576px) {
+            grid-gap: 10px;
+            margin-top: 10px;
+        }
+        .event-review {
+            padding-top: 10px;
+            .event-review-avatar-holder {
+                display: flex;
+                flex-direction: row;
+                font-size: 16px;
+                margin: 5px 5px 5px auto;
+                .event-review-name {
+                    @include text-24-600;
+                    color: $Highlighter3;
+                }
+                .event-review-rating1 {
+                    padding-left: 5px;
+                    display: flex;
+                    margin-left: auto;
+                    @media only screen and (max-width: 576px) {
+                        display: none;
+                    }
+                }
+            }
+            .event-review-para {
+                @include font(18px, 500, 34px);
+                padding: 5px;
+                color: $Highlighter4;
+            }
+            .event-review-time {
+                @include font(18px, 400, 32px);
+                color: $Highlighter4;
+            }
+            .event-review-rating2 {
+                padding-left: 5px;
+                display: none;
+                margin-left: auto;
+                @media only screen and (max-width: 576px) {
+                    display: flex;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        margin: auto;
+    }
+}
+.event-loadMore-button {
+    @include btn-solid(200px, $Highlighter3);
+    @include btn-normal;
+    @include text-20-600;
+    margin-top: 30px;
+    @media only screen and (max-width: 1024px) {
+        @include btn-solid(100%, $Highlighter3);
+    }
+}

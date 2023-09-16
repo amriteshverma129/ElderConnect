@@ -1,0 +1,69 @@
+query getAllBuddies {
+    allBuddys {
+        edges {
+            node {
+                image
+                name
+                email
+                callAvailability
+                about
+                aWordFromBuddy
+                favouriteColor
+                familyBackground
+                background
+                likes
+                dislikes
+                hobbies
+                use
+                personality
+            }
+        }
+    }
+    allPurchaseMemberships {
+        edges {
+            node {
+                slices {
+                    ... on PurchaseMembershipSlicesPlan {
+                        variation {
+                            ... on PurchaseMembershipSlicesPlanDefault {
+                                primary {
+                                    tag
+                                    title
+                                    description
+                                    price
+                                    term
+                                    link
+                                    profit
+                                    type
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+query getSingleBuddy($email: String) {
+    allBuddys(where: { email: $email }) {
+        edges {
+            node {
+                image
+                name
+                email
+                callAvailability
+                about
+                aWordFromBuddy
+                favouriteColor
+                familyBackground
+                background
+                likes
+                dislikes
+                hobbies
+                use
+                personality
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .post-creator {
+        border: 1px solid $Borders;
+        border-radius: 8px;
+        margin: 20px auto;
+        width: 600px;
+        font-size: 0.8;
+        .post-creator-title-avatar-holder {
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .post-creator-input {
+                margin-left: 10px;
+                flex: 1;
+                outline: none;
+                border: none;
+                background-color: transparent;
+                font-size: 1rem;
+            }
+        }
+        .post-creator-icons-button-holder {
+            @include flex(center, space-between);
+            flex-direction: row;
+            padding: 15px;
+            .post-creator-icons {
+                span {
+                    margin-right: 10px;
+                    padding: 10px 10px;
+                    border-radius: 20px;
+                    &:first-child {
+                        background-color: rgb(221, 248, 248);
+                    }
+                }
+            }
+            .post-creator-button {
+                @include btn-small;
+                @include btn-solid(80px, $Dark);
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-right: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            width: 95%;
+        }
+    }
+    .posts-loader {
+        @media only screen and (max-width: 768px) {
+            width: 95%;
+        }
+    }
+}
+.post-card {
+    border: 1px solid $Borders;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 600px;
+    font-size: 0.8rem;
+    .post-card-title-avatar-holder {
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        .post-card-title {
+            margin-left: 10px;
+            line-height: 0.5;
+            span {
+                color: $Gray;
+            }
+        }
+        .post-card-icon {
+            margin-left: auto;
+        }
+    }
+    .post-card-para {
+        padding-left: 15px;
+    }
+    .post-card-likes-icons {
+        padding: 15px 15px;
+        color: $Gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .post-card-icons {
+            display: flex;
+            align-items: center;
+
+            span {
+                background-color: $WhiteSmoke;
+                margin-right: 10px;
+                padding: 10px 10px;
+                border-radius: 20px;
+            }
+        }
+    }
+    .post-card-input-avatar-holder {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 15px;
+        background-color: $WhiteSmoke;
+        border-radius: 30px;
+        padding: 5px;
+        align-items: center;
+        input {
+            flex: 1;
+            height: 100%;
+            margin: auto 10px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            font-size: 1rem;
+            @media only screen and (max-width: 576px) {
+                width: 112px;
+                font-size: 15px;
+            }
+        }
+        span {
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        width: 95%;
+    }
+}

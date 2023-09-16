@@ -1,0 +1,77 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+@import "../../../styles/form/form";
+.feedback-modal {
+    @include flex(flex-start, center);
+    height: 100vh;
+    padding: 16px;
+    overflow-y: auto;
+}
+.feedback-modal-holder {
+    @include form-global(768px, 600px, 30px);
+    background-color: $White;
+    margin: auto;
+    @media only screen and (max-width: 768px) {
+        padding: 16px;
+    }
+    .feedback-modal-heading-cross-holder {
+        @include flex(flex-start, space-between);
+        margin: auto 10px;
+        letter-spacing: 0.4px;
+        color: $Highlighter4;
+        .feedback-modal-heading {
+            @include text-32-700;
+
+            @media screen and (max-width: 576px) {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+
+        svg {
+            cursor: pointer;
+            margin-top: 8px;
+            path {
+                fill: $Highlighter3;
+            }
+            g {
+                stroke: $Highlighter3;
+            }
+        }
+    }
+    .feedback-title {
+        padding: 10px;
+        @include text-18-500;
+        color: $Highlighter4;
+    }
+    .feedback-textarea-container {
+        padding: 0 10px;
+    }
+
+    .feedback-modal-rating {
+        margin: 0 10px 32px 10px;
+    }
+    .feedback-actions {
+        padding: 0 10px;
+        @media screen and (max-width: 576px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .feedback-modal-submit-btn {
+        @include btn-normal;
+        @include btn-solid(180px, $Highlighter3);
+        @include text-18-600;
+        margin-right: 20px;
+        margin-top: 20px;
+        @media screen and (max-width: 768px) {
+            margin: 0;
+        }
+    }
+    .feedback-modal-cancel-btn {
+        @include btn-link;
+        @include text-18-600;
+        color: $Highlighter4;
+    }
+}

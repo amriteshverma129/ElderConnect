@@ -1,0 +1,125 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.event-search-filter-holder {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 1024px) {
+        margin: 10px auto;
+    }
+    @media only screen and (max-width: 768px) {
+        //styling the filter button
+        div {
+            &:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+    .event-heading {
+        @include section-heading;
+        color: $Highlighter3;
+        @media only screen and (max-width: 576px) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .event-search-box {
+        width: 370px;
+        margin-left: auto;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .event-filter-button {
+        @include btn-normal;
+        @include btn-solid(fit-content, $Highlighter3);
+        height: 48px;
+        margin: 0 0 0 20px;
+        @include text-18-600;
+        @include flex(center, center);
+    }
+}
+.event-search-box2 {
+    width: 100%;
+    margin-bottom: 20px;
+    @media only screen and (min-width: 769px) {
+        display: none;
+    }
+    @media screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
+}
+.event-notice {
+    @include text-20-400;
+    text-align: left;
+    margin: 35px 0;
+    @media only screen and (max-width: 1024px) {
+        margin: 20px auto;
+        @include text-18-400;
+    }
+    div {
+        margin-bottom: 14px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .event-notice-paragraph-image {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .event-notice-image {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 14/16;
+            position: relative;
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .event-notice-title {
+        color: $Highlighter3;
+        @include font(44px, 700, 62px);
+        @include flex(center, space-between);
+        div {
+            margin-bottom: 6px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+            line-height: 40px;
+            @include flex(flex-start, space-between);
+            flex-direction: column;
+        }
+    }
+}
+.event-header {
+    background-color: $White;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    @include content-center(row);
+    @media screen and (max-width: 576px) {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+    > div {
+        position: relative;
+        height: 100px;
+        width: 400px;
+    }
+}
+.event-images-holder {
+    width: 100%;
+    @include content-center(row);
+    margin-top: 40px;
+    > div {
+        @include content-center(row);
+        position: relative;
+        height: 100px;
+        width: 200px;
+    }
+}

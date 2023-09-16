@@ -1,0 +1,104 @@
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .thankyou {
+    min-height: 100vh;
+  }
+}
+.thankyou .thankyou-pop-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 24px;
+  padding: 50px;
+  width: 750px;
+  margin-bottom: 50px;
+  margin-top: 35px;
+}
+@media only screen and (max-width: 1024px) {
+  .thankyou .thankyou-pop-up {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .thankyou .thankyou-pop-up {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+.thankyou .thankyou-pop-up .thankyou-heading {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  color: #142c60;
+}
+@media screen and (max-width: 576px) {
+  .thankyou .thankyou-pop-up .thankyou-heading {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.thankyou .thankyou-pop-up .thankyou-para {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #142c60;
+}
+.thankyou .thankyou-pop-up .thankyou-para span {
+  color: #d92d3e;
+}
+@media screen and (max-width: 576px) {
+  .thankyou .thankyou-pop-up .thankyou-para {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+}
+.thankyou .thankyou-pop-up .thankyou-btn {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  padding: 10px 50px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.thankyou .thankyou-pop-up .thankyou-btn:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.thankyou .thankyou-pop-up .thankyou-btn:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .thankyou .thankyou-pop-up .thankyou-btn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}/*# sourceMappingURL=thankyou.module.css.map */

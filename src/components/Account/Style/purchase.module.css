@@ -1,0 +1,233 @@
+.purchase {
+  margin-bottom: 20px;
+}
+.purchase .purchase-heading {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  margin-bottom: 48px;
+}
+@media only screen and (max-width: 768px) {
+  .purchase .purchase-heading {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+}
+.purchase .purchase-card-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+.purchase .purchase-card-holder .purchase-card {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.04);
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 32px;
+  background-color: #d92d3e;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+@media only screen and (min-width: 1024px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-tag {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 2px 22px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-tag {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 2px 22px;
+  }
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #d92d3e;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-title {
+    margin-top: 15px;
+    line-height: 42px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-para {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #142c60;
+  margin-bottom: 10px;
+  flex: 1;
+}
+@media only screen and (max-width: 768px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-para {
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-para {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-price {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #142c60;
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-price .purchase-card-time {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}
+@media only screen and (max-width: 1400px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-price .purchase-card-time {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-price {
+    font-size: 32px;
+    line-height: 50px;
+  }
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-message {
+  color: #d92d3e;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-btn {
+  display: block;
+  margin-top: 10px;
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-btn button {
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 200px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-btn button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.purchase .purchase-card-holder .purchase-card .purchase-card-btn button:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 576px) {
+  .purchase .purchase-card-holder .purchase-card .purchase-card-btn button {
+    border-radius: 30px;
+    background-color: #142c60;
+    color: #ffffff;
+    width: 100%;
+    border: 1px solid #142c60;
+    transition: all 0.3s ease;
+  }
+  .purchase .purchase-card-holder .purchase-card .purchase-card-btn button:disabled {
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 0px;
+    pointer-events: none;
+  }
+  .purchase .purchase-card-holder .purchase-card .purchase-card-btn button:hover {
+    background-color: #ffffff;
+    color: #142c60;
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .purchase .purchase-card-holder .purchase-card {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .purchase .purchase-card-holder {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .purchase {
+    margin-bottom: 0px;
+  }
+}
+
+.Purchase-membership-skeleton {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .Purchase-membership-skeleton {
+    margin-bottom: 0px;
+  }
+}
+.Purchase-membership-skeleton .purchase-card-holder-skeleton {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+@media only screen and (max-width: 1200px) {
+  .Purchase-membership-skeleton .purchase-card-holder-skeleton {
+    grid-template-columns: 1fr;
+  }
+}
+.Purchase-membership-skeleton .purchase-card-holder-skeleton .purchase-card-skeleton {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.04);
+  padding: 30px;
+  border-radius: 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .Purchase-membership-skeleton .purchase-card-holder-skeleton .purchase-card-skeleton {
+    padding: 20px;
+  }
+}
+.Purchase-membership-skeleton .purchase-card-holder-skeleton .purchase-card-skeleton .purchase-card-btn {
+  display: block;
+  margin-top: 10px;
+  width: 200px;
+}
+@media only screen and (max-width: 576px) {
+  .Purchase-membership-skeleton .purchase-card-holder-skeleton .purchase-card-skeleton .purchase-card-btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=purchase.module.css.map */

@@ -1,0 +1,134 @@
+.trialPeriod {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  padding: 16px;
+  overflow-y: auto;
+}
+.trialPeriod .trialPeriod-pop-up {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 24px;
+  padding: 30px;
+  width: 700px;
+  margin-bottom: 50px;
+  margin: auto;
+  background: #ffffff;
+}
+@media only screen and (max-width: 1024px) {
+  .trialPeriod .trialPeriod-pop-up {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .trialPeriod .trialPeriod-pop-up {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .trialPeriod .trialPeriod-pop-up {
+    padding: 16px;
+  }
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #142c60;
+}
+@media screen and (max-width: 576px) {
+  .trialPeriod .trialPeriod-pop-up .trialPeriod-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-note {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 4px;
+  color: #142c60;
+  width: 100%;
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-note span {
+  color: #d92d3e;
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-note span[id=tag] {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-note .trailPeriod-line {
+  margin: auto 10px;
+  width: 1px;
+  height: 20px;
+  display: inline-block;
+  background-color: #d92d3e;
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-note2 {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 4px;
+  color: #142c60;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-note2 span {
+  color: #d92d3e;
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-note2 span[id=tag] {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.trialPeriod .trialPeriod-pop-up .trialPeriod-note2 .trailPeriod-line {
+  margin: auto 10px;
+  width: 1px;
+  height: 20px;
+  display: inline-block;
+  background-color: #d92d3e;
+}
+@media screen and (max-width: 1024px) {
+  .trialPeriod .trialPeriod-pop-up .trialPeriod-note2 .trailPeriod-line {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .trialPeriod .trialPeriod-pop-up .trialPeriod-note2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.trialPeriod .trialPeriod-pop-up .trailPeriod-btn-holders button {
+  border-radius: 30px;
+  background-color: #d92d3e;
+  color: #ffffff;
+  width: 280px;
+  border: 1px solid #d92d3e;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.trialPeriod .trialPeriod-pop-up .trailPeriod-btn-holders button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.trialPeriod .trialPeriod-pop-up .trailPeriod-btn-holders button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=trialPeriodModal.module.css.map */

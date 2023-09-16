@@ -1,0 +1,11 @@
+@import "../../../styles/color/color";
+.category {
+    margin-top: 8px;
+    input {
+        &:checked {
+            color: $Primary !important;
+            background: $Primary;
+            border: 1px solid $Primary;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@mixin btn-normal {
+    padding: 10px 20px;
+}
+@mixin btn-small {
+    padding: 10px 16px;
+}
+@mixin btn-solid($width, $backgroundColor) {
+    border-radius: 30px;
+    background-color: if($backgroundColor != null, $backgroundColor, $Highlighter3);
+    color: $White;
+    width: $width;
+    border: 1px solid if($backgroundColor != null, $backgroundColor, $Highlighter3);
+    transition: all 0.3s ease;
+    &:disabled {
+        background-color: $Gray;
+        border: 0px;
+        pointer-events: none;
+    }
+    &:hover {
+        background-color: $White;
+        color: $backgroundColor;
+        transition: all 0.3s ease;
+    }
+}
+@mixin btn-outline($width, $color, $margin: 10px auto, $alignSelf: center) {
+    border-radius: 30px;
+    background-color: $White;
+    color: if($color != null, $color, $Dark);
+    width: $width;
+    margin: $margin;
+    align-self: $alignSelf;
+    border: 1px solid if($color != null, $color, $Dark);
+    transition: all 0.3s ease;
+    &:disabled {
+        background-color: $Gray;
+        color: $White;
+        border: 0px;
+        pointer-events: none;
+    }
+    &:hover {
+        background-color: if($color != null, $color, $Dark);
+        color: $White;
+        transition: all 0.3s ease;
+    }
+}
+@mixin btn-link {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $Primary;
+        text-decoration-color: $Primary;
+        transition: all 0.3s ease;
+    }
+}

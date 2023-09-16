@@ -1,0 +1,84 @@
+{
+  "id": "plan",
+  "type": "SharedSlice",
+  "name": "Plan",
+  "description": "Plan",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Plan",
+      "primary": {
+        "tag": {
+          "type": "Text",
+          "config": {
+            "label": "Tag",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        },
+        "price": {
+          "type": "Text",
+          "config": {
+            "label": "Price",
+            "placeholder": ""
+          }
+        },
+        "term": {
+          "type": "Select",
+          "config": {
+            "label": "Term",
+            "placeholder": "",
+            "options": [
+              "month",
+              "year",
+              "session"
+            ]
+          }
+        },
+        "link": {
+          "type": "Text",
+          "config": {
+            "label": "Link",
+            "placeholder": ""
+          }
+        },
+        "profit": {
+          "type": "Text",
+          "config": {
+            "label": "Profit",
+            "placeholder": ""
+          }
+        },
+        "type": {
+          "type": "Select",
+          "config": {
+            "label": "Type",
+            "placeholder": "",
+            "options": [
+              "buddy",
+              "all"
+            ]
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

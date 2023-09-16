@@ -1,0 +1,13 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.joinEventButton {
+    @include btn-solid(250px, $Highlighter3);
+    @include text-24-500;
+    padding: 10px 25px;
+    @media only screen and (max-width: 576px) {
+        @include btn-solid(100%, $Highlighter3);
+        @include text-18-500;
+    }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "buddy",
+  "label": "Buddy",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": ""
+        }
+      },
+      "email": {
+        "type": "Text",
+        "config": {
+          "label": "Email",
+          "placeholder": ""
+        }
+      },
+      "call-availability": {
+        "type": "Text",
+        "config": {
+          "label": "When they are available",
+          "placeholder": ""
+        }
+      },
+      "about": {
+        "type": "Text",
+        "config": {
+          "label": "About",
+          "placeholder": ""
+        }
+      },
+      "a-word-from-buddy": {
+        "type": "Text",
+        "config": {
+          "label": "A Word From Buddy",
+          "placeholder": ""
+        }
+      },
+      "favourite-color": {
+        "type": "Text",
+        "config": {
+          "label": "Favourite Color",
+          "placeholder": ""
+        }
+      },
+      "family-background": {
+        "type": "Text",
+        "config": {
+          "label": "Family Background",
+          "placeholder": ""
+        }
+      },
+      "background": {
+        "type": "Text",
+        "config": {
+          "label": "Background",
+          "placeholder": ""
+        }
+      },
+      "likes": {
+        "type": "Text",
+        "config": {
+          "label": "Likes",
+          "placeholder": ""
+        }
+      },
+      "dislikes": {
+        "type": "Text",
+        "config": {
+          "label": "Dislikes",
+          "placeholder": ""
+        }
+      },
+      "hobbies": {
+        "type": "Text",
+        "config": {
+          "label": "Hobbies",
+          "placeholder": ""
+        }
+      },
+      "use": {
+        "type": "Text",
+        "config": {
+          "label": "What they Use",
+          "placeholder": ""
+        }
+      },
+      "personality": {
+        "type": "Text",
+        "config": {
+          "label": "Personality",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.rating-Review .rating-Review-value {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #142c60;
+  padding-top: 8px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1220px) {
+  .rating-Review .rating-Review-value {
+    font-size: 16px;
+  }
+}
+.rating-Review .rating-Review-dot {
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 6px;
+  width: 6px;
+  flex: 0 0 6px;
+  background-color: #142c60;
+  border-radius: 50%;
+}/*# sourceMappingURL=ratingReview.module.css.map */

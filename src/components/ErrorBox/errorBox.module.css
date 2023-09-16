@@ -1,0 +1,25 @@
+.errorBox {
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.errorBox span {
+  position: relative !important;
+}
+.errorBox .error {
+  color: #d92d3e;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.errorBox .success {
+  color: green;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.errorBox:empty {
+  display: none;
+}/*# sourceMappingURL=errorBox.module.css.map */

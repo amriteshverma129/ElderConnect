@@ -1,0 +1,55 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+@import "../../../styles/form/form";
+
+.updateEmail {
+    @include flex(flex-start, center);
+    height: 100vh;
+    padding: 16px;
+    overflow-y: auto;
+    .updateEmail-pop-up {
+        @include content-center(column);
+        @include form-global(575px, 550px, 30px);
+        margin: auto;
+        background: $White;
+        @media only screen and (max-width: 768px) {
+            padding: 16px;
+        }
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+        .updateEmail-heading-cross-holder {
+            @include flex(flex-start, space-between);
+            flex-direction: row;
+            margin-bottom: 10px;
+            color: $Highlighter3;
+            width: 100%;
+            .updateEmail-heading {
+                @include text-32-700;
+                padding-right: 16px;
+                flex: 1;
+                @media screen and (max-width: 576px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            svg {
+                cursor: pointer;
+                margin-top: 10px;
+                path {
+                    fill: $Highlighter3;
+                }
+                g {
+                    stroke: $Highlighter3;
+                }
+            }
+        }
+        .infusion-form {
+            width: 100%;
+            .infusion-submit {
+                @include form-submit;
+            }
+        }
+    }
+}

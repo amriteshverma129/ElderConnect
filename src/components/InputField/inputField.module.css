@@ -1,0 +1,66 @@
+.inputField {
+  padding-bottom: 12px;
+}
+.inputField label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 4px;
+  color: #142c60;
+  width: 100%;
+}
+.inputField label span {
+  color: #d92d3e;
+}
+.inputField label span[id=tag] {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.inputField input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #444444;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 30px;
+  border: 1px solid #142c60;
+}
+.inputField input[type=date] {
+  background-image: url("/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+.inputField input[type=date]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+.inputField .inputField-note {
+  font-size: 16px;
+  color: #444444;
+  text-align: left;
+  display: block;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+.inputField .error {
+  color: #d92d3e;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}/*# sourceMappingURL=inputField.module.css.map */

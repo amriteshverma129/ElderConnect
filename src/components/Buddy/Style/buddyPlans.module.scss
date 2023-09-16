@@ -1,0 +1,89 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.buddyPlans-card-holder {
+    @include grid(repeat(2, 1fr), 1fr, 1fr, 16px);
+    margin-top: 80px;
+    .buddyPlans-card {
+        border: 1px solid $Borders;
+        box-shadow: 0px 8px 30px $BuddyBoxShadow;
+        border-radius: 12px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        .buddyPlans-card-title {
+            @include text-32-500;
+            color: $Primary;
+            margin-bottom: 20px;
+            flex: 1;
+            @media only screen and (max-width: 768px) {
+                line-height: 42px;
+                margin-bottom: 8px;
+            }
+            @media only screen and (max-width: 576px) {
+                @include text-18-600;
+            }
+        }
+        .buddyPlans-card-para {
+            @include text-24-500;
+            margin-bottom: 24px;
+            color: $Highlighter3;
+            flex: 1;
+            @media only screen and (max-width: 768px) {
+                line-height: 35px;
+                font-weight: 500;
+                margin-bottom: 16px;
+            }
+            @media only screen and (max-width: 576px) {
+                @include text-18-600;
+            }
+        }
+        .buddyPlans-card-price {
+            @include text-48-700;
+            margin-bottom: 12px;
+            color: $Highlighter3;
+            .buddyPlans-card-time {
+                @include text-32-500;
+                @media only screen and (max-width: 576px) {
+                    font-size: 24px;
+                    line-height: 34px;
+                }
+            }
+            @media only screen and (max-width: 576px) {
+                font-size: 32px;
+                line-height: 48px;
+                margin-bottom: 16px;
+            }
+        }
+        .buddyPlans-card-message {
+            color: $Primary;
+            @include text-20-700;
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+            }
+        }
+        .buddyPlans-card-btn {
+            display: block;
+            margin-top: 25px;
+
+            @media only screen and (max-width: 576px) {
+                margin-top: 16px;
+            }
+            button {
+                @include btn-solid(200px, $Highlighter3);
+                padding: 10px 60px;
+                @include text-18-600;
+                @media only screen and (max-width: 576px) {
+                    @include btn-solid(100%, $Highlighter3);
+                }
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            padding: 16px;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,91 @@
+.privacyPolicy {
+  padding: 50px 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .privacyPolicy {
+    padding: 30px 0 0;
+  }
+}
+.privacyPolicy .privacyPolicy-heading {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  color: #142c60;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .privacyPolicy .privacyPolicy-heading {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .privacyPolicy .privacyPolicy-heading {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+}
+.privacyPolicy .privacyPolicy-para {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 60px;
+  color: #142c60;
+}
+@media only screen and (max-width: 1024px) {
+  .privacyPolicy .privacyPolicy-para {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .privacyPolicy .privacyPolicy-para {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+}
+
+.privacyPolicy-skeleton {
+  padding: 50px 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .privacyPolicy-skeleton {
+    padding: 30px 0 0;
+  }
+}
+.privacyPolicy-skeleton .privacyPolicy-heading-skeleton {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .privacyPolicy-skeleton .privacyPolicy-heading-skeleton {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .privacyPolicy-skeleton .privacyPolicy-heading-skeleton {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+}
+.privacyPolicy-skeleton .privacyPolicy-para-skeleton {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 1024px) {
+  .privacyPolicy-skeleton .privacyPolicy-para-skeleton {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .privacyPolicy-skeleton .privacyPolicy-para-skeleton {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+}/*# sourceMappingURL=privacyPolicy.module.css.map */

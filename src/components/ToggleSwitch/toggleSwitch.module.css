@@ -1,0 +1,28 @@
+.toggle-switch-off {
+  height: 30px;
+  width: 50px;
+  background-color: rgba(34, 34, 34, 0.2);
+  padding: 3px;
+  border-radius: 50px;
+}
+.toggle-switch-off .toggle-slider {
+  height: 24px;
+  width: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.toggle-switch-on {
+  height: 30px;
+  width: 50px;
+  background-color: #142c60;
+  padding: 3px;
+  border-radius: 50px;
+}
+.toggle-switch-on .toggle-slider {
+  height: 24px;
+  width: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: auto;
+}/*# sourceMappingURL=toggleSwitch.module.css.map */

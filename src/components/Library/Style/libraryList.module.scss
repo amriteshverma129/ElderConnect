@@ -1,0 +1,59 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.library-list-loadMore-button {
+    @include btn-solid(fit-content, $Highlighter3);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    @include text-18-600;
+    padding: 10px 20px;
+    @media only screen and (max-width: 576px) {
+        @include btn-solid(100%, $Highlighter3);
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+.library-list-message-box {
+    @include flex(center, center);
+    height: 300px;
+    width: 100%;
+    @include font(24px, 600, 36px);
+}
+
+.library-list-related-videos-skeleton {
+    @media only screen and (max-width: 1024px) and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .library-list-card-skeleton {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-bottom: 32px;
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+        .library-list-image-skeleton {
+            height: 116px;
+            min-width: 116px;
+            width: 116px;
+            border-radius: 10px;
+            @media only screen and (max-width: 1024px) {
+                height: 250px;
+                width: 100%;
+            }
+        }
+        .library-list-content-skeleton {
+            padding-left: 15px;
+            flex: 1;
+            @media only screen and (max-width: 1024px) {
+                padding: 15px 15px 15px 0;
+            }
+            @media only screen and (max-width: 576px) {
+                padding: 15px 15px 0 0;
+            }
+        }
+    }
+}

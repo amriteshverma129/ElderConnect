@@ -1,0 +1,64 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.needHelp-modal-holder {
+    width: 620px;
+    height: auto;
+    background-color: $White;
+    border-radius: 12px;
+    padding: 30px;
+    @include justify-center;
+    .needHelp-modal-heading-cross-holder {
+        @include flex(center, space-between);
+        margin-bottom: 30px;
+        .needHelp-modal-heading {
+            @include text-32-700;
+            color: $Highlighter4;
+            @media only screen and (max-width: 576px) {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+
+        svg {
+            cursor: pointer;
+            g {
+                stroke: $Highlighter3;
+            }
+            path {
+                fill: $Highlighter3;
+            }
+        }
+    }
+    .needHelp-modal-para {
+        @include text-24-600;
+        color: $Highlighter4;
+        span {
+            &:first-child {
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    .needHelp-modal-btn {
+        @include btn-normal;
+        @include btn-solid(280px, $Highlighter3);
+        @include text-18-600;
+        margin-top: 20px;
+        @media only screen and (max-width: 576px) {
+            @include btn-solid(100%, $Highlighter3);
+            margin-top: 20px;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        padding: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 95%;
+    }
+}

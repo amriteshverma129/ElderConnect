@@ -1,0 +1,11 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+
+.countDownTimer {
+    @include text-18-600;
+    color: $Primary;
+    width: 100%;
+    @include flex(center, center);
+    margin-top: 8px;
+}

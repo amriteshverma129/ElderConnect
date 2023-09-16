@@ -1,0 +1,89 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+
+.hamburger {
+    height: 45px;
+    @include flex(center, space-evenly);
+    flex-direction: row-reverse;
+    padding: 6px 12px 6px 6px;
+    border: 1px solid $Borders;
+    border-radius: 100px;
+    margin-left: 20px;
+    position: relative;
+    .hamburger-avatar {
+        width: 30px;
+        height: 30px;
+        flex: 0 0 30px;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        @include flex(center, center);
+        color: $White;
+        background-color: $Primary;
+        cursor: pointer;
+    }
+    .hamburger-menu {
+        @include flex(center, center);
+        color: $BorderGray;
+        cursor: pointer;
+        margin-left: 10px;
+        z-index: 100;
+        svg {
+            width: 24px;
+            height: auto;
+            path {
+                fill: $Highlighter3;
+            }
+        }
+    }
+    .hamburger-menu-collapse {
+        z-index: 1100;
+        position: absolute;
+        top: 180%;
+        right: 0;
+        background-color: $White;
+        border-radius: 0.4rem;
+        box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
+        min-width: 180px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: 0.3s;
+    }
+    .hamburger-menu-expand {
+        position: absolute;
+        z-index: 1100;
+        top: 140%;
+        right: 0;
+        background-color: $White;
+        border-radius: 0.4rem;
+        box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
+        min-width: 180px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: unset;
+        transition: 0.3s;
+    }
+    .hamburger-background {
+        position: fixed;
+        inset: 0 0 0 0;
+        z-index: 99;
+    }
+    @media only screen and (max-width: 768px) {
+        .hamburger-menu-expand {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .hamburger-menu-collapse {
+            position: fixed;
+            left: 100%;
+            right: -100%;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}

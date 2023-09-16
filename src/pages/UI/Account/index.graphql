@@ -1,0 +1,26 @@
+query getAllPurchaseMembership {
+    allPurchaseMemberships {
+        edges {
+            node {
+                slices {
+                    ... on PurchaseMembershipSlicesPlan {
+                        variation {
+                            ... on PurchaseMembershipSlicesPlanDefault {
+                                primary {
+                                    tag
+                                    title
+                                    description
+                                    price
+                                    term
+                                    link
+                                    profit
+                                    type
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,295 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.event-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+    }
+    .event-card-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        max-height: 300px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        span {
+            max-height: 300px !important;
+        }
+
+        > div {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16/10;
+            position: relative;
+            img {
+                border-radius: 10px;
+                z-index: 1;
+                transition: 0.3s ease;
+            }
+            .event-card-tag {
+                z-index: 2;
+                @include tag;
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                background-color: $White;
+                border-radius: 20px;
+                color: $Highlighter3;
+            }
+        }
+
+        &:hover {
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            > div {
+                img {
+                    opacity: 0.8;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+    .event-card-content {
+        padding: 0 0 0 40px;
+        @media screen and (max-width: 1368px) {
+            padding: 0 0 0 20px;
+        }
+        @media only screen and (max-width: 1024px) {
+            padding: 20px 0px;
+        }
+        @media screen and (max-width: 576px) {
+            padding: 20px 0 0 0;
+        }
+        .event-card-title-btn-holder {
+            display: flex;
+
+            > div {
+                &:first-child {
+                    flex: 1;
+                    padding-right: 10px;
+                }
+            }
+
+            .event-card-title {
+                @include text-32-700;
+                color: $Highlighter3;
+                margin-bottom: 2px;
+                cursor: pointer;
+                text-decoration: underline;
+                text-decoration-color: $White;
+                transition: all 0.3s ease;
+                @media only screen and (max-width: 576px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+
+                &:hover {
+                    text-decoration-color: $Highlighter3;
+                    transition: all 0.3s ease;
+                }
+            }
+            .event-card-ongoing1 {
+                @include font(18px, 500, 32px);
+                margin-bottom: 10px;
+                display: none;
+                align-items: center;
+                color: $Primary;
+                @media only screen and (max-width: 1024px) {
+                    display: flex;
+                }
+                span {
+                    display: block;
+                    height: 6px;
+                    width: 6px;
+                    background-color: $Primary;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                }
+            }
+            .event-card-time {
+                display: flex;
+                align-items: center;
+                @include text-20-700;
+                color: $Primary;
+                margin-bottom: 12px;
+                @media only screen and (max-width: 600px) {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+                @media only screen and (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                .event-card-line {
+                    width: 2px;
+                    height: 22px;
+                    display: inline-block;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    background-color: $BorderGray;
+                    @media only screen and (max-width: 600px) {
+                        display: none;
+                    }
+                }
+            }
+            .event-card-rating {
+                @include text-18-600;
+                margin-bottom: 12px;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            .event-card-timer-btn-holder {
+                display: flex;
+                margin-left: auto;
+                flex-direction: column;
+                align-items: center;
+                .event-card-countDown-label {
+                    @include text-18-600;
+                    margin: 8px 0;
+                    color: $Highlighter3;
+                }
+                @media only screen and (max-width: 1290px) {
+                    display: none;
+                }
+            }
+        }
+        .event-card-para {
+            @include font(18px, 500, 32px);
+            margin-bottom: 15px;
+            color: $Highlighter4;
+            .event-card-link {
+                color: $Highlighter3;
+                text-decoration: underline;
+                transition: all 0.3s ease;
+                &:hover {
+                    color: $Primary;
+                    transition: all 0.3s ease;
+                }
+            }
+            .event-card-readMore {
+                font-weight: 700;
+                > span {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $Primary;
+                        text-decoration-color: $Primary;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+        .event-card-ongoing2 {
+            @include font(18px, 500, 10px);
+            display: flex;
+            align-items: center;
+            color: $Primary;
+            margin-bottom: 10px;
+            @media only screen and (max-width: 1024px) {
+                display: none;
+            }
+            span {
+                display: block;
+                height: 6px;
+                width: 6px;
+                background-color: $Primary;
+                margin-right: 5px;
+                border-radius: 50%;
+            }
+        }
+        .event-card-timer-btn-holder {
+            display: none;
+            .event-card-countDown-label {
+                @include text-18-600;
+                margin: 8px 0;
+            }
+            @media only screen and (max-width: 1291px) {
+                @include flex(flex-start, flex-start);
+                flex-direction: column;
+            }
+            @media only screen and (max-width: 576px) {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.event-card-holder {
+    .event-card-day-line {
+        height: 6px;
+        width: 100%;
+        background-color: $Primary;
+        position: relative;
+        margin-top: 75px;
+        margin-bottom: 75px;
+
+        @media screen and (max-width: 576px) {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .event-card-day-title {
+            @include justify-center;
+            background-color: $White;
+            @include font(64px, 700, 96px);
+            padding-left: 16px;
+            padding-right: 16px;
+            color: $Highlighter4;
+            @media only screen and (max-width: 1024px) {
+                font-size: 40px;
+            }
+            @media screen and (max-width: 576px) {
+                line-height: 60px;
+            }
+        }
+    }
+    .event-card-day-line2 {
+        height: 6px;
+        width: 100%;
+        background-color: $Highlighter3;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        @media screen and (max-width: 576px) {
+            margin-top: 40px;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.event-card-holder-skeleton {
+    display: flex;
+    flex-direction: column;
+    .event-card-skeleton {
+        width: 100%;
+        display: grid;
+        height: auto;
+        grid-template-columns: 40% 1fr;
+        gap: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        @media only screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+        .event-card-image-skeleton {
+            width: 100%;
+            aspect-ratio: 16/10;
+        }
+        // .event-card-content-skeleton {
+        //     @media only screen and (max-width: 1024px) {
+        //         // height: 250px;
+        //     }
+        // }
+    }
+}

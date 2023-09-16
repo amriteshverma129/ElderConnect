@@ -1,0 +1,92 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.event-list-loadMore-button {
+    @include btn-solid(fit-content, $Highlighter3);
+    @include btn-normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include text-18-600;
+    @media only screen and (max-width: 576px) {
+        @include btn-solid(100%, $Highlighter3);
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+.event-list-button {
+    @include btn-normal;
+    @include btn-solid(fit-content, $Highlighter3);
+    @include text-18-600;
+    @media only screen and (max-width: 576px) {
+        padding: 10px 25px;
+    }
+}
+
+.event-list-title {
+    @include text-32-700;
+    color: $Highlighter3;
+    padding: 0 20px;
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+    }
+    @media only screen and (max-width: 576px) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+.event-list-message-box {
+    @include flex(center, center);
+    height: 300px;
+    width: 100%;
+    @include text-24-600;
+}
+
+.event-list-action {
+    @include flex(center, flex-end);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+}
+
+// EventList2Skeleton sccss code.
+
+.event-card-holder-skeleton {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
+    .event-card-skeleton {
+        width: 100%;
+        .event-card-image-skeleton {
+            width: 100%;
+            aspect-ratio: 16/10;
+        }
+    }
+}
+
+.event-list-action-skeleton {
+    @include flex(center, space-between);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+    .event-list-slider-skeleton {
+        display: flex;
+        gap: 20px;
+    }
+}

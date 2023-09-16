@@ -1,0 +1,62 @@
+.chooseBuddyPage-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #142c60;
+  margin-top: 35px;
+}
+@media screen and (max-width: 576px) {
+  .chooseBuddyPage-heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.choose-buddy-list {
+  margin-top: 56px;
+}
+@media only screen and (max-width: 1024px) {
+  .choose-buddy-list {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .choose-buddy-list {
+    margin-top: 20px;
+  }
+}
+
+.infusion-form {
+  padding: 20px 0;
+}
+.infusion-form input[type=radio] {
+  display: none;
+}
+.infusion-form .infusion-submit {
+  display: flex;
+  justify-content: center;
+}
+.infusion-form .infusion-submit button {
+  border-radius: 30px;
+  background-color: #d92d3e;
+  color: #ffffff;
+  width: 280px;
+  border: 1px solid #d92d3e;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+}
+.infusion-form .infusion-submit button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.infusion-form .infusion-submit button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .infusion-form .infusion-submit button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=chooseBuddyList.module.css.map */

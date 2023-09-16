@@ -1,0 +1,100 @@
+query getAllFAQs {
+    allFaqs {
+        edges {
+            node {
+                slices {
+                    ... on FaqSlicesQuestions_answer {
+                        variation {
+                            ... on FaqSlicesQuestions_answerDefault {
+                                primary {
+                                    title
+                                }
+                                items {
+                                    question
+                                    answer
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+query getAllAboutLOOPVillages {
+    allAboutloopvilages {
+        edges {
+            node {
+                slices {
+                    ... on AboutloopvilageSlicesHero_panel {
+                        variation {
+                            ... on AboutloopvilageSlicesHero_panelDefault {
+                                items {
+                                    title
+                                    description
+                                    image
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+query getAllCareerss {
+    allCareerss {
+        edges {
+            node {
+                slices {
+                    ... on CareersSlicesHero_panel {
+                        variation {
+                            ... on CareersSlicesHero_panelDefault {
+                                items {
+                                    title
+                                    description
+                                    image
+                                }
+                            }
+                        }
+                    }
+                    ... on CareersSlicesCareer_panel {
+                        variation {
+                            ... on CareersSlicesCareer_panelDefault {
+                                items {
+                                    title
+                                    description
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+query getAllFounders {
+    allFounders {
+        edges {
+            node {
+                slices {
+                    ... on FounderSlicesFounder {
+                        variation {
+                            ... on FounderSlicesFounderDefault {
+                                items {
+                                    name
+                                    designation
+                                    about
+                                    image
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.community-cards {
+    @include grid(1fr, 1fr, 1fr, 20px);
+    .community-card-holder {
+        .community-card-1 {
+            border-bottom: 6px solid $Highlighter3;
+            padding: 20px;
+            .community-card-content-avatar-holder {
+                display: flex;
+                flex-direction: row;
+                .community-card-content-like-holder {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 20px;
+                    width: 100%;
+                    .community-card-content {
+                        .community-card-title {
+                            @include text-32-700;
+                            color: $Highlighter3;
+                            @media only screen and (max-width: 576px) {
+                                font-size: 24px;
+                                line-height: 36px;
+                            }
+                            @media only screen and (max-width: 440px) {
+                                margin-top: 120px;
+                                margin-left: -110px;
+                            }
+                        }
+                        .community-card-date {
+                            @include text-20-400;
+                            @media only screen and (max-width: 576px) {
+                                font-size: 15px;
+                            }
+                            @media only screen and (max-width: 440px) {
+                                margin-left: -110px;
+                            }
+                        }
+                        .community-card-category {
+                            @include text-24-600;
+                            @media only screen and (max-width: 440px) {
+                                margin-left: -110px;
+                            }
+                        }
+                    }
+                    .community-card-like-1 {
+                        background-color: $Borders;
+                        height: 40px;
+                        width: 70px;
+                        border-radius: 30px;
+                        margin-left: auto;
+                        @include flex(center, space-between);
+                        padding: 8px;
+                        @media only screen and (max-width: 1024px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .community-card-avatarGroup-button-holder {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .community-card-button {
+                    @include btn-small;
+                    @include btn-solid(145px, $Dark);
+                    margin-left: auto;
+                    margin-right: 5px;
+                    @include text-18-600;
+                    @media only screen and (max-width: 1024px) {
+                        @include btn-solid(100%, $Dark);
+                    }
+                }
+                .community-card-avatarGroup-like-holder {
+                    @include flex(center, space-between);
+                    flex-direction: row;
+                    @media only screen and (min-width: 768px) {
+                        padding-left: 120px;
+                    }
+                    .community-card-like-2 {
+                        background-color: $Borders;
+                        height: 40px;
+                        width: 70px;
+                        border-radius: 30px;
+                        display: none;
+                        @include flex(center, space-between);
+                        padding: 8px;
+                        @media only screen and (max-width: 1024px) {
+                            display: flex;
+                        }
+                        @media only screen and (min-width: 1025px) {
+                            display: none;
+                        }
+                    }
+                }
+                @media only screen and (max-width: 1024px) {
+                    flex-direction: column;
+                }
+            }
+        }
+        .community-card-2 {
+            @include flex(center, space-between);
+            flex-direction: row;
+            margin-bottom: 20px;
+            .community-card-post-detail {
+                display: flex;
+                align-items: center;
+                .community-card-title-category {
+                    margin-left: 20px;
+                    .community-card-title {
+                        @include text-20-700;
+                        color: $Highlighter3;
+                    }
+                    .community-card-category {
+                        @include text-20-500;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        transform: translate(35px, 10px);
+                        margin-bottom: 25px;
+                    }
+                }
+                @media only screen and (max-width: 768px) {
+                    flex-direction: column;
+                    transform: translateX(-20px);
+                }
+            }
+            .community-card-details-section-title-user-checkbox {
+                margin-right: 35px;
+                margin-bottom: 10px;
+                input {
+                    width: 20px;
+                    height: 20px;
+                    accent-color: $Primary;
+                }
+                @media only screen and (max-width: 768px) {
+                    transform: translate(-15px, 0px);
+                    margin-top: 40px;
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                border-bottom: 4px solid $Highlighter3;
+            }
+        }
+    }
+    .community-cards-viewMore-button {
+        @include btn-solid(200px, $Secondary);
+        @include btn-small;
+        @include text-18-600;
+        @media only screen and (max-width: 576px) {
+            @include btn-solid(100%, $Secondary);
+        }
+    }
+}

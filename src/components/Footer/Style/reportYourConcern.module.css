@@ -1,0 +1,180 @@
+.reportYourConcern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.reportYourConcern .reportYourConcern-heading {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 108px;
+  text-align: center;
+  color: #142c60;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 768px) {
+  .reportYourConcern .reportYourConcern-heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+}
+.reportYourConcern .reportYourConcern-para {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #142c60;
+}
+@media screen and (max-width: 768px) {
+  .reportYourConcern .reportYourConcern-para {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+}
+.reportYourConcern .infusion-form {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 24px;
+  padding: 50px;
+  width: 750px;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .reportYourConcern .infusion-form {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reportYourConcern .infusion-form {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+.reportYourConcern .infusion-form .infusion-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reportYourConcern .infusion-form .infusion-submit button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  border-radius: 30px;
+  background-color: #d92d3e;
+  color: #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #d92d3e;
+  transition: all 0.3s ease;
+  padding: 10px 50px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.reportYourConcern .infusion-form .infusion-submit button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.reportYourConcern .infusion-form .infusion-submit button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .reportYourConcern .infusion-form .infusion-submit button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+}
+
+.reportYourConcern-skeleton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.reportYourConcern-skeleton .reportYourConcern-heading-skeleton {
+  line-height: 108px;
+  width: 730px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 768px) {
+  .reportYourConcern-skeleton .reportYourConcern-heading-skeleton {
+    width: 520px;
+    line-height: 48px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .reportYourConcern-skeleton .reportYourConcern-heading-skeleton {
+    width: 90%;
+  }
+}
+.reportYourConcern-skeleton .reportYourConcern-para-skeleton {
+  line-height: 48px;
+  margin-bottom: 40px;
+  width: 970px;
+}
+@media screen and (max-width: 1024px) {
+  .reportYourConcern-skeleton .reportYourConcern-para-skeleton {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reportYourConcern-skeleton .reportYourConcern-para-skeleton {
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+}
+.reportYourConcern-skeleton .infusion-form-skeleton {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 24px;
+  padding: 50px;
+  width: 750px;
+  height: auto;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .reportYourConcern-skeleton .infusion-form-skeleton {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reportYourConcern-skeleton .infusion-form-skeleton {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+.reportYourConcern-skeleton .infusion-form-skeleton .infusion-submit-form-heading-skeleton {
+  width: 350px;
+  height: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .reportYourConcern-skeleton .infusion-form-skeleton .infusion-submit-form-heading-skeleton {
+    width: 90%;
+  }
+}
+.reportYourConcern-skeleton .infusion-form-skeleton .infusion-submit-button-skeleton {
+  margin-top: 30px;
+  height: 45px;
+  width: 190px;
+}
+@media only screen and (max-width: 576px) {
+  .reportYourConcern-skeleton .infusion-form-skeleton .infusion-submit-button-skeleton {
+    width: 100%;
+  }
+}/*# sourceMappingURL=reportYourConcern.module.css.map */

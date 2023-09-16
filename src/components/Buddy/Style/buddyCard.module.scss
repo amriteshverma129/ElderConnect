@@ -1,0 +1,96 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.buddy-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 40px;
+
+    @media screen and (max-width: 1600px) {
+        grid-gap: 30px;
+    }
+    @media screen and (max-width: 576px) {
+        grid-template-columns: 1fr;
+        margin-bottom: 0;
+        grid-gap: 16px;
+    }
+
+    .buddy-card-image {
+        width: 100%;
+        aspect-ratio: 10/10;
+        position: relative;
+        cursor: pointer;
+        img {
+            border-radius: 24px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            max-height: 330px;
+        }
+    }
+    .buddy-card-content {
+        .buddy-card-title {
+            @include font(32px, 700, 40px);
+            color: $Highlighter3;
+            margin-bottom: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            cursor: pointer;
+            @media only screen and (max-width: 576px) {
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 12px;
+            }
+        }
+        .buddy-card-subHeading {
+            @include text-18-600;
+            color: $Highlighter3;
+            margin-bottom: 16px;
+            display: block;
+            @media only screen and (max-width: 576px) {
+                margin-bottom: 8px;
+            }
+        }
+        .buddy-card-time {
+            @include text-24-600;
+            color: $Primary;
+            margin-bottom: 24px;
+            display: block;
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 12px;
+            }
+        }
+        .buddy-card-para {
+            @include text-20-400;
+            margin-bottom: 0;
+            color: $Highlighter4;
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+                line-height: 34px;
+            }
+            .buddy-card-readMore {
+                font-weight: 700;
+                @media only screen and (max-width: 576px) {
+                    font-weight: 600;
+                }
+                > span {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $Primary;
+                        text-decoration-color: $Primary;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}

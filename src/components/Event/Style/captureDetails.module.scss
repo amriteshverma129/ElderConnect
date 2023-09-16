@@ -1,0 +1,23 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+@import "../../../styles/form/form";
+
+.capture-details {
+    @include flex(center, center);
+    flex-direction: column;
+    .capture-details-form {
+        @include form-global(600px, 600px);
+        @media screen and (max-width: 576px) {
+            margin-bottom: 0;
+        }
+        .capture-details-field {
+            label {
+                @include form-label;
+            }
+        }
+        .capture-details-submit {
+            @include form-submit;
+        }
+    }
+}

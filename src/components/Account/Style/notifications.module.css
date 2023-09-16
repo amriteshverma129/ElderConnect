@@ -1,0 +1,531 @@
+.account-notifications .account-notifications-buttons {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 24px;
+}
+.account-notifications .account-notifications-buttons button {
+  height: 48px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.account-notifications .account-notifications-buttons .notifications-all-button {
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #142c60;
+  width: 63px;
+  margin: 0px;
+  align-self: center;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-buttons .notifications-all-button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  color: #ffffff;
+  border: 0px;
+  pointer-events: none;
+}
+.account-notifications .account-notifications-buttons .notifications-all-button:hover {
+  background-color: #142c60;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-buttons .notifications-all-active-button {
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 63px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-buttons .notifications-all-active-button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.account-notifications .account-notifications-buttons .notifications-all-active-button:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-buttons .notifications-Unread-button {
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #142c60;
+  width: 146px;
+  margin: 0px;
+  align-self: center;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-buttons .notifications-Unread-button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  color: #ffffff;
+  border: 0px;
+  pointer-events: none;
+}
+.account-notifications .account-notifications-buttons .notifications-Unread-button:hover {
+  background-color: #142c60;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-buttons .notifications-Unread-active-button {
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 146px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-buttons .notifications-Unread-active-button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.account-notifications .account-notifications-buttons .notifications-Unread-active-button:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 576px) {
+  .account-notifications .account-notifications-buttons {
+    gap: 16px;
+  }
+}
+.account-notifications .account-notifications-events-all-details {
+  display: flex;
+  gap: 75px;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notification-avatar-holder {
+  position: relative;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notification-avatar-holder span {
+  background: #d92d3e;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 5px;
+  right: 10px;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > div {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #142c60;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > div .account-notification-event-topic {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-decoration-line: underline;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > div .account-notification-event-topic:hover {
+  color: #d92d3e;
+  text-decoration-color: #d92d3e;
+  transition: all 0.3s ease;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > div .account-notification-time {
+  color: #d92d3e;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > div .account-notification-time {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > div .account-notification-time2 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > div .account-notification-time2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > div {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+@media only screen and (max-width: 576px) {
+  .account-notifications .account-notifications-events-all-details .account-notifications-events-message-and-avatar-holder .account-notifications-message > span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-event-button {
+  height: 56px;
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 163px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-event-button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.account-notifications .account-notifications-events-all-details .account-notifications-event-button:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 1285px) {
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button {
+    border-radius: 30px;
+    background-color: #142c60;
+    color: #ffffff;
+    width: 100%;
+    border: 1px solid #142c60;
+    transition: all 0.3s ease;
+    height: 48px;
+  }
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button:disabled {
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 0px;
+    pointer-events: none;
+  }
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button:hover {
+    background-color: #ffffff;
+    color: #142c60;
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button {
+    border-radius: 30px;
+    background-color: #142c60;
+    color: #ffffff;
+    width: 163px;
+    border: 1px solid #142c60;
+    transition: all 0.3s ease;
+    height: 56px;
+  }
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button:disabled {
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 0px;
+    pointer-events: none;
+  }
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button:hover {
+    background-color: #ffffff;
+    color: #142c60;
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button {
+    border-radius: 30px;
+    background-color: #142c60;
+    color: #ffffff;
+    width: 100%;
+    border: 1px solid #142c60;
+    transition: all 0.3s ease;
+    height: 48px;
+  }
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button:disabled {
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 0px;
+    pointer-events: none;
+  }
+  .account-notifications .account-notifications-events-all-details .account-notifications-event-button:hover {
+    background-color: #ffffff;
+    color: #142c60;
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (max-width: 1285px) {
+  .account-notifications .account-notifications-events-all-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .account-notifications .account-notifications-events-all-details {
+    flex-direction: row;
+    gap: 75px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .account-notifications .account-notifications-events-all-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.account-notifications .account-notifications-view-more-button {
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 150px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 10px 20px;
+}
+.account-notifications .account-notifications-view-more-button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.account-notifications .account-notifications-view-more-button:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .account-notifications .account-notifications-view-more-button {
+    width: 100%;
+  }
+}
+
+.account-notifications2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.account-notifications2 > div {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  width: 800px;
+  text-align: center;
+  color: #142c60;
+}
+@media only screen and (max-width: 1024px) {
+  .account-notifications2 > div {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .account-notifications2 > div {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 100%;
+  }
+}
+.account-notifications2 button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 200px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 20px;
+}
+.account-notifications2 button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.account-notifications2 button:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+
+.account-notifications-skeleton .account-notifications-buttons-skeleton {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+.account-notifications-skeleton .account-notifications-events-all-details-skeleton {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+.account-notifications-skeleton .account-notifications-events-all-details-skeleton .account-notifications-message-skeleton {
+  width: 100%;
+}
+
+.notificationBar-container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0px 130px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* Style the indicators */
+}
+@media only screen and (max-width: 1800px) {
+  .notificationBar-container {
+    padding: 0px 60px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .notificationBar-container {
+    padding: 0px 6px;
+  }
+}
+.notificationBar-container .notificationBar {
+  background-color: #d92d3e;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notificationBar-container .notificationBar .notificationBar-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  flex: 1;
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container > div {
+  margin-left: 20px;
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container > div :first-child {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+@media screen and (max-width: 768px) {
+  .notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container > div {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container button {
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #d92d3e;
+  width: 200px;
+  margin: 10px auto;
+  align-self: center;
+  border: 1px solid #d92d3e;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  color: #ffffff;
+  border: 0px;
+  pointer-events: none;
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container button:hover {
+  background-color: #d92d3e;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container button {
+    width: 100%;
+  }
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container .notificationBar-cross {
+  cursor: pointer;
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container .notificationBar-cross svg {
+  height: 40px;
+  width: 40px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container .notificationBar-cross svg path {
+  fill: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container .notificationBar-cross {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .notificationBar-container .notificationBar .notificationBar-timer-btn-cross-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .notificationBar-container .notificationBar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    padding: 30px 20px 10px;
+    position: relative;
+  }
+  .notificationBar-container .notificationBar .notificationBar-title {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 4px;
+  }
+}/*# sourceMappingURL=notifications.module.css.map */

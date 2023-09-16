@@ -1,0 +1,96 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.settings {
+    @include flex(center, center);
+    .settings-card {
+        @include flex(center, space-between);
+        flex-direction: row;
+        margin-bottom: 20px;
+        width: 800px;
+        position: relative;
+        h1 {
+            @include text-32-500;
+            color: $Highlighter3;
+            @media screen and (max-width: 768px) {
+                @include text-20-700;
+            }
+        }
+        h3 {
+            @include text-20-500;
+            color: $Highlighter4;
+            @media screen and (max-width: 768px) {
+                @include text-18-500;
+            }
+        }
+        .settings-toggle-switch {
+            position: absolute;
+            right: 0px;
+            top: 10px;
+            @media screen and (max-width: 768px) {
+                position: static;
+                margin-left: auto;
+                margin-top: 10px;
+            }
+        }
+        // .settings-btn-customize {
+        //     @include btn-normal;
+        //     @include btn-link;
+        //     color: $Primary;
+        //     padding-right: 0px;
+        //     @include text-20-600;
+        //     @media screen and (max-width: 576px) {
+        //         margin-left: auto;
+        //     }
+        // }
+        @media screen and (max-width: 1200px) {
+            width: 700px;
+        }
+        @media screen and (max-width: 1024px) {
+            width: 800px;
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+
+.settings-skeleton {
+    @include flex(center, center);
+    .settings-card-skeleton {
+        @include flex(center, space-between);
+        flex-direction: row;
+        margin-bottom: 20px;
+        width: 800px;
+        position: relative;
+
+        .settings-card-text-skeleton {
+            width: 70%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        .settings-toggle-switch-skeleton {
+            position: absolute;
+            right: 0px;
+            top: 10px;
+            @media screen and (max-width: 768px) {
+                position: static;
+                margin-left: auto;
+                margin-top: 10px;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            width: 700px;
+        }
+        @media screen and (max-width: 1024px) {
+            width: 800px;
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}

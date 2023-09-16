@@ -1,0 +1,45 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+@import "../../styles/form/form";
+
+.inputField {
+    padding-bottom: 12px;
+    label {
+        @include form-label;
+    }
+    input {
+        @include form-input;
+    }
+    input[type="date"] {
+        background-image: url("/calendar.svg");
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+        background-size: 20px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+    .inputField-note {
+        font-size: 16px;
+        color: $Highlighter4;
+        text-align: left;
+        display: block;
+        margin-top: -4px;
+        margin-bottom: 4px;
+    }
+    .error {
+        @include form-error;
+    }
+}

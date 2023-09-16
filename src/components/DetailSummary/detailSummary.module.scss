@@ -1,0 +1,94 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+
+.detailSummary {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid $Highlighter3;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    position: relative;
+    background-color: $White;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @media only screen and (max-width: 576px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .detailSummary-question {
+        @include flex(center, space-between);
+        flex-direction: row;
+        @include font(28px, 500, 40px);
+        color: $Highlighter3;
+        cursor: pointer;
+        position: relative;
+        @media only screen and (max-width: 768px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .detailSummary-title {
+        padding-right: 45px;
+    }
+    .detailSummary-answer {
+        @include font(24px, 400, 36px);
+        color: $Highlighter3;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transition: 0.1s ease;
+        @media only screen and (max-width: 768px) {
+            margin-top: 16px !important;
+            @include text-20-400;
+        }
+    }
+    .detailSummary-answerActive {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 36px;
+        height: auto;
+        transition: 0.3s ease;
+    }
+    .detailSummary-action {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        width: 100%;
+        text-align: right;
+        @media only screen and (max-width: 768px) {
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        svg {
+            transition: 0.3s;
+        }
+    }
+}
+
+.detailSummary-skeleton {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid $Borders;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    position: relative;
+    background-color: $White;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

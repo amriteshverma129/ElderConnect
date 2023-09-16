@@ -1,0 +1,9 @@
+.account-communities .account-communities-search-Box {
+  width: 60%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .account-communities .account-communities-search-Box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=communities.module.css.map */

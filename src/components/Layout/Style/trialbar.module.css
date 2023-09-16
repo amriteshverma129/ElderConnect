@@ -1,0 +1,39 @@
+.trialBar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 394px;
+}
+@media screen and (max-width: 1024px) {
+  .trialBar {
+    width: 294px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .trialBar {
+    width: 100%;
+  }
+}
+.trialBar .trialBar-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  width: 100%;
+}
+.trialBar .trialBar-details p {
+  margin-bottom: 0px;
+}
+.trialBar .trialBar-progress {
+  background-color: #dddddd;
+  border-radius: 40px;
+  height: 6px;
+  width: 100%;
+}
+.trialBar .trialBar-progress .trialBar-progress-bar {
+  height: 100%;
+  background-color: #d92d3e;
+  border-radius: 40px;
+}/*# sourceMappingURL=trialbar.module.css.map */

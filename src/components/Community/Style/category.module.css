@@ -1,0 +1,8 @@
+.category {
+  margin-top: 8px;
+}
+.category input:checked {
+  color: #d92d3e !important;
+  background: #d92d3e;
+  border: 1px solid #d92d3e;
+}/*# sourceMappingURL=category.module.css.map */

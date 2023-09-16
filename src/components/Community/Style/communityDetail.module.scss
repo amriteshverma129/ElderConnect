@@ -1,0 +1,134 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.community-detail {
+    .community-detail-cover-image {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 68px;
+        width: 100vw;
+        height: 400px;
+    }
+    .community-detail-profile-image {
+        margin-top: 250px;
+        height: 300px;
+        width: 300px;
+        background-color: $White;
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 10px;
+        img {
+            border-radius: 20px;
+        }
+    }
+    .community-detail-card {
+        margin-top: -150px;
+        margin-left: 310px;
+
+        .community-detail-card-title-button-holder {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .community-detail-card-title {
+                span {
+                    font-size: 1rem;
+                }
+            }
+            .community-detail-card-button-joincommunity {
+                .community-detail-card-button {
+                    @include btn-small;
+                    @include btn-solid(200px, $Primary);
+                    margin-right: 10px;
+                    @media only screen and (max-width: 1024px) {
+                        transform: translateY(105px);
+                        width: 100%;
+                    }
+                }
+                @media only screen and (max-width: 1024px) {
+                    margin-bottom: 10px;
+                }
+            }
+            .community-detail-card-sendbutton-leave {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .community-detail-card-button2 {
+                    @include btn-normal;
+                    @include btn-outline(142px, $Highlighter3);
+                    @include content-center(row);
+                    gap: 10px;
+                }
+                .community-detail-card-button3 {
+                    @include btn-small;
+                    @include btn-link;
+                    margin-left: 12px;
+                    color: $Primary;
+                }
+                @media only screen and (max-width: 1024px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    transform: translateY(105px);
+                    margin-bottom: 10px;
+                }
+            }
+            @media only screen and (max-width: 1024px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .community-detail-card-avatarGroup-button-holder {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            span {
+                font-style: normal;
+                @include text-20-500;
+            }
+            @media only screen and (max-width: 1024px) {
+                flex-direction: column;
+                align-items: baseline;
+                transform: translateY(-65px);
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            margin-top: -5px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    .community-detail-tabs {
+        margin-bottom: 10px;
+        @include content-center(row);
+        > div {
+            border-radius: 40px;
+            background-color: $WhiteSmoke;
+            height: 60px;
+            width: 600px;
+            @include content-center(row);
+            .community-detail-tab {
+                width: 100%;
+                height: 100%;
+                border-radius: 40px;
+                color: $Secondary;
+                background-color: $WhiteSmoke;
+                text-align: center;
+                @include flex(center, center);
+                cursor: pointer;
+            }
+            .community-detail-tab-active {
+                width: 100%;
+                height: 100%;
+                border-radius: 40px;
+                color: $WhiteSmoke;
+                background-color: $Secondary;
+                text-align: center;
+                @include flex(center, center);
+                cursor: pointer;
+            }
+        }
+    }
+}

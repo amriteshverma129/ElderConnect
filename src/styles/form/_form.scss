@@ -1,0 +1,238 @@
+@import "../typography/typography";
+@import "../color/color";
+@import "../button/button";
+
+// Login/SignUp Form Container //
+@mixin form-container {
+    @include flex(center, center);
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("https://images.prismic.io/loop-web-members/5e8b0393-e2bc-4032-9d8b-249fac2f76e6_image.webp?auto=compress,format");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (max-width: 576px) {
+        height: 100%;
+        min-height: 100vh;
+    }
+    .signUp-form-container,
+    .login-form-container {
+        max-height: 100vh;
+        overflow-y: auto;
+        width: 100%;
+        padding: 40px 10px;
+        @media screen and (max-width: 576px) {
+            padding: 0;
+            height: 100%;
+            min-height: 100vh;
+            max-height: 100%;
+        }
+    }
+}
+// Login/SignUp Form Container //
+
+// Login/SignUp Main Form //
+@mixin form {
+    background-color: $White;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 32px 40px;
+    max-width: 575px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 768px) {
+        padding: 16px;
+        width: 100%;
+    }
+    @media screen and (max-width: 576px) {
+        height: 100%;
+        justify-content: center;
+        border-radius: 0;
+        min-height: 100vh;
+    }
+}
+// Login/SignUp Main Form //
+
+// Global Form //
+@mixin form-global($deskWidth, $tabletWidth: 100%, $padding: 50px) {
+    border: 1px solid $Borders;
+    border-radius: 24px;
+    padding: $padding;
+    width: $deskWidth;
+    margin-bottom: 50px;
+    @media only screen and (max-width: 1024px) {
+        width: $tabletWidth;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+        border: 0;
+    }
+}
+// Global Form //
+
+@mixin form-heading {
+    @include font(32px, 600, 46px);
+    text-align: center;
+    color: $Highlighter3;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    @media screen and (max-width: 576px) {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+@mixin form-heading1 {
+    @include text-72-700;
+    text-align: center;
+    color: $Highlighter3;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    @media screen and (max-width: 768px) {
+        @include text-32-700;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
+
+@mixin form-para($marginBottom) {
+    @include text-32-400;
+    margin-bottom: $marginBottom;
+    text-align: center;
+    color: $Highlighter3;
+    @media screen and (max-width: 768px) {
+        @include text-18-400;
+        margin-bottom: 32px;
+    }
+}
+
+@mixin form-label {
+    display: block;
+    @include font(18px, 500, 32px);
+    margin-bottom: 4px;
+    color: $Highlighter3;
+    width: 100%;
+    span {
+        color: $Primary;
+    }
+    span[id="tag"] {
+        color: $Dark;
+        @include font(14px, 400, 32px);
+    }
+}
+
+@mixin form-input {
+    @include font(18px, 400, 28px);
+    color: $Highlighter4;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 30px;
+    border: 1px solid $Highlighter3;
+}
+
+@mixin form-textarea {
+    @include font(18px, 400, 28px);
+    color: $Highlighter4;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1px solid $Highlighter3;
+    resize: none;
+}
+
+@mixin form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    label {
+        display: inline-block;
+        @include font(18px, 500, 32px);
+        color: $Highlighter4;
+        @media screen and (max-width: 576px) {
+            margin-bottom: 4px;
+            margin-left: 10px !important;
+        }
+        a {
+            @include btn-link;
+        }
+    }
+    input {
+        height: 30px;
+        width: 30px;
+        margin-left: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+        @media screen and (max-width: 576px) {
+            margin-top: 1px;
+        }
+    }
+    input[type="checkbox"] {
+        accent-color: $Highlighter3;
+    }
+}
+
+@mixin form-submit {
+    @include flex(center, center);
+    button {
+        @include font(24px, 500, 36px);
+        @include btn-solid(fit-content, $Primary);
+        padding: 10px 50px;
+        margin-top: 40px;
+        margin-bottom: 12px;
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            padding: 10px 20px;
+            @include text-18-500;
+            margin-top: 20px;
+        }
+    }
+}
+
+@mixin form-success {
+    color: green;
+    display: block;
+    @include text-18-500;
+}
+
+@mixin form-error {
+    color: $Primary;
+    display: block;
+    @include text-18-500;
+}
+
+@mixin form-msg {
+    padding: 0;
+    span {
+        position: relative !important;
+    }
+}
+
+@mixin form-link {
+    padding-bottom: 0;
+    margin-top: 12px;
+    label {
+        display: block;
+        @include font(20px, 400, 30px);
+        color: $Highlighter4;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        width: fit-content;
+        margin: auto;
+        span {
+            font-weight: 600;
+            text-decoration: underline;
+            color: $Highlighter3;
+            transition: 0.3s ease;
+            &:hover {
+                color: $Primary;
+                transition: 0.3s ease;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 18px;
+        }
+    }
+}

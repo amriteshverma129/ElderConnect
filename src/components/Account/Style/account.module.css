@@ -1,0 +1,90 @@
+.account-cards-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 35px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .account-cards-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .account-cards-holder {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .account-cards-holder {
+    padding-top: 20px;
+  }
+}
+.account-cards-holder .account-card {
+  position: relative;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.account-cards-holder .account-card:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.account-cards-holder .account-card .account-Notification-card-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.account-cards-holder .account-card .account-Notification-card-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #d92d3e;
+  background-color: #d92d3e;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ffffff;
+}
+.account-cards-holder .account-card .account-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: #142c60;
+}
+.account-cards-holder .account-card .account-card-para {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+  color: #444444;
+}
+.account-cards-holder .account-card svg path {
+  fill: #142c60;
+}
+.account-cards-holder .account-card-Skeleton {
+  width: 100%;
+  height: 200px;
+}
+
+.account-heading {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  margin-top: 35px;
+  color: #142c60;
+}
+@media screen and (max-width: 576px) {
+  .account-heading {
+    margin-top: 20px;
+    line-height: 60px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=account.module.css.map */

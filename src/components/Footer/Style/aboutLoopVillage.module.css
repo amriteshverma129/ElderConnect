@@ -1,0 +1,406 @@
+.aboutLoopVillage-heading {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 108px;
+  text-align: center;
+  color: #142c60;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutLoopVillage-heading {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-heading {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage-heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutLoopVillage > div:nth-child(5) > div:first-child, .aboutLoopVillage > div:last-child > div:first-child {
+    order: 2;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-image > div {
+  width: 100%;
+  position: relative;
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-image > div > span {
+  position: unset !important;
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-image > div > span img {
+  position: unset !important;
+  width: 100% !important;
+  height: auto !important;
+}
+@media only screen and (max-width: 1024px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-image {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-image {
+    margin-bottom: 20px;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content {
+  padding: 20px 0;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content {
+    width: 100%;
+    padding: 0;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content .aboutLoopVillage-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  color: #142c60;
+  margin-bottom: 40px;
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content .aboutLoopVillage-title span {
+  color: #d92d3e;
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content .aboutLoopVillage-title {
+    font-size: 38px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content .aboutLoopVillage-title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-top: -10px;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content .aboutLoopVillage-para {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 45px;
+  color: #142c60;
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content .aboutLoopVillage-para span {
+  color: #d92d3e;
+  text-decoration: underline;
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content .aboutLoopVillage-para abbr {
+  color: #d92d3e;
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content .aboutLoopVillage-para {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content button {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 30px;
+  border: 1px solid #d92d3e;
+  background-color: #d92d3e;
+  color: #ffffff;
+  width: 300px;
+  margin: 50px 0 0;
+  align-self: flex-start;
+  padding: 10px 50px;
+  transition: all 0.3s;
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content button {
+    width: 280px;
+    padding: 11px 30px;
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-content button {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-image-content-holder .aboutLoopVillage-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutLoopVillage .aboutLoopVillage-thought {
+  padding: 100px 85px;
+  margin-bottom: 100px;
+  background: whitesmoke;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 12px;
+}
+@media only screen and (max-width: 1600px) {
+  .aboutLoopVillage .aboutLoopVillage-thought {
+    margin-bottom: 100px;
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .aboutLoopVillage .aboutLoopVillage-thought {
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage .aboutLoopVillage-thought {
+    margin-bottom: 20px;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-thought .aboutLoopVillage-para {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #142c60;
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage .aboutLoopVillage-thought .aboutLoopVillage-para {
+    font-size: 38px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage .aboutLoopVillage-thought .aboutLoopVillage-para {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.aboutLoopVillage .aboutLoopVillage-thought .aboutLoopVillage-writer {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: #142c60;
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage .aboutLoopVillage-thought .aboutLoopVillage-writer {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.aboutLoopVillage-heading-skeleton {
+  line-height: 118px;
+  width: 60%;
+  margin: 35px auto 100px auto;
+}
+@media screen and (max-width: 1024px) {
+  .aboutLoopVillage-heading-skeleton {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 60px;
+    line-height: 80px;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-heading-skeleton {
+    margin-bottom: 25px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage-heading-skeleton {
+    font-size: 32px;
+    line-height: 58px;
+    width: 90%;
+  }
+}
+
+.aboutLoopVillage-skeleton .aboutLoopVillage-thought-skeleton {
+  margin-bottom: 100px;
+  border-radius: 12px;
+  width: 100%;
+  height: 400px;
+}
+@media only screen and (max-width: 1600px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-thought-skeleton {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-thought-skeleton {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-thought-skeleton {
+    margin-bottom: 20px;
+  }
+}
+.aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-image-skeleton {
+  width: 100%;
+  aspect-ratio: 8/8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-image-skeleton {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-image-skeleton {
+    margin-bottom: 20px;
+  }
+}
+.aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton {
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton {
+    width: 100%;
+  }
+}
+.aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton .aboutLoopVillage-title-skeleton {
+  line-height: 92px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton .aboutLoopVillage-title-skeleton {
+    line-height: 80px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton .aboutLoopVillage-title-skeleton {
+    line-height: 68px;
+    margin-top: -10px;
+  }
+}
+.aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton .aboutLoopVillage-para-skeleton {
+  line-height: 45px;
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton .aboutLoopVillage-para-skeleton {
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+}
+.aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton .aboutLoopVillage-browse-events-skeleton {
+  width: 300px;
+  margin: 50px 0 0;
+  align-self: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton .aboutLoopVillage-browse-events-skeleton {
+    width: 280px;
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-content-skeleton .aboutLoopVillage-browse-events-skeleton {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.aboutLoopVillage-skeleton .aboutLoopVillage-image-content-holder-skeleton .aboutLoopVillage-center-skeleton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=aboutLoopVillage.module.css.map */

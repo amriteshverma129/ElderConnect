@@ -1,0 +1,35 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.trialBar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 394px;
+    @media screen and (max-width: 1024px) {
+        width: 294px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    .trialBar-details {
+        @include flex(center, space-between);
+        @include font(16px, 600, 26px);
+        width: 100%;
+        p {
+            margin-bottom: 0px;
+        }
+    }
+    .trialBar-progress {
+        background-color: #dddddd;
+        border-radius: 40px;
+        height: 6px;
+        width: 100%;
+        .trialBar-progress-bar {
+            height: 100%;
+            background-color: $Primary;
+            border-radius: 40px;
+        }
+    }
+}

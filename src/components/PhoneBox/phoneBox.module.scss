@@ -1,0 +1,99 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+@import "../../styles/form/form";
+
+.phoneBox {
+    padding-bottom: 12px;
+    label {
+        @include form-label;
+    }
+    .phoneBox-field {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        border-radius: 30px;
+        border: 1px solid $Highlighter3;
+        position: relative;
+        div {
+            &:first-child {
+                width: 15%;
+                position: static;
+                padding-bottom: 0;
+                button {
+                    border: 0px;
+                    color: transparent;
+                    outline: 0;
+                    justify-content: flex-start;
+                }
+                ul {
+                    position: absolute;
+                    width: 50%;
+                    max-height: 160px;
+                    border: 0;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+                    @media screen and (max-width: 1024px) {
+                        width: 100%;
+                    }
+                    > div {
+                        position: sticky !important;
+                        width: 100% !important;
+                        input {
+                            border-radius: 10px;
+                            border: 1px solid $Highlighter3;
+                            color: $Highlighter4;
+                        }
+                    }
+
+                    li {
+                        color: $Highlighter4;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    width: 12%;
+                }
+                @media screen and (max-width: 576px) {
+                    width: 20%;
+                }
+                @media screen and (max-width: 420px) {
+                    width: 25%;
+                }
+            }
+            &:last-child {
+                width: 85%;
+                input {
+                    color: $Highlighter4;
+                    width: 100%;
+                    padding: 10px 16px 10px 4px;
+                    border: 0px;
+                    border-radius: 30px;
+                    outline: 0px;
+                    &:focus {
+                        border: 0px;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    width: 88%;
+                }
+                @media screen and (max-width: 576px) {
+                    width: 80%;
+                }
+                @media screen and (max-width: 420px) {
+                    width: 85%;
+                }
+            }
+        }
+    }
+    .phoneBox-note {
+        font-size: 16px;
+        color: $Highlighter4;
+        text-align: left;
+        display: block;
+        margin-top: 8px;
+    }
+    .phoneBox-error {
+        @include form-error;
+    }
+}

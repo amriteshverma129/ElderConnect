@@ -1,0 +1,79 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.buddy-detail {
+    .buddy-detail-heading {
+        @include text-48-700;
+        color: $Highlighter3;
+        margin-bottom: 35px;
+        margin-top: 35px;
+        @media only screen and (max-width: 576px) {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+            margin-top: 32px;
+        }
+    }
+    .buddy-detail-img-content-holder {
+        @include grid(20% 1fr, 30% 1fr, 1fr, 30px);
+        .buddy-detail-img {
+            width: 100%;
+            aspect-ratio: 10/10;
+            position: relative;
+            img {
+                border-radius: 15px;
+            }
+        }
+        .buddy-detail-content {
+            .buddy-detail-title {
+                @include text-32-700;
+                color: $Highlighter4;
+                margin-bottom: 12px;
+                margin-top: 12px;
+            }
+            .buddy-detail-para {
+                @include font(24px, 500, 45px);
+                color: $Highlighter4;
+                margin-bottom: 32px;
+                @media only screen and (max-width: 576px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+    .buddy-detail-contact-box {
+        @include flex(center, center);
+        flex-direction: column;
+        background-color: $WhiteSmoke;
+        padding: 80px;
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .buddy-detail-contact-info {
+            @include text-32-500;
+            color: $Highlighter3;
+            margin-bottom: 40px;
+            text-align: center;
+            @media only screen and (max-width: 576px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        .buddy-detail-contact-btn {
+            @include btn-solid(400px, $Highlighter3);
+            padding-top: 12px;
+            padding-bottom: 12px;
+            @include text-18-600;
+            text-decoration: underline;
+            @media only screen and (max-width: 576px) {
+                @include btn-solid(100%, $Highlighter3);
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            padding: 20px;
+        }
+    }
+}

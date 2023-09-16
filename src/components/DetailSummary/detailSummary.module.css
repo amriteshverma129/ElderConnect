@@ -1,0 +1,104 @@
+.detailSummary {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #142c60;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  position: relative;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .detailSummary {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .detailSummary {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.detailSummary .detailSummary-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #142c60;
+  cursor: pointer;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .detailSummary .detailSummary-question {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.detailSummary .detailSummary-title {
+  padding-right: 45px;
+}
+.detailSummary .detailSummary-answer {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #142c60;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: 0.1s ease;
+}
+@media only screen and (max-width: 768px) {
+  .detailSummary .detailSummary-answer {
+    margin-top: 16px !important;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+.detailSummary .detailSummary-answerActive {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 36px;
+  height: auto;
+  transition: 0.3s ease;
+}
+.detailSummary .detailSummary-action {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .detailSummary .detailSummary-action svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.detailSummary .detailSummary-action svg {
+  transition: 0.3s;
+}
+
+.detailSummary-skeleton {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(34, 34, 34, 0.2);
+  padding-top: 36px;
+  padding-bottom: 36px;
+  position: relative;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .detailSummary-skeleton {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}/*# sourceMappingURL=detailSummary.module.css.map */

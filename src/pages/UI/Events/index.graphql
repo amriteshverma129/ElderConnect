@@ -1,0 +1,67 @@
+query getAllEventDetailPage {
+    allEventdetailpages(first: 1000) {
+        edges {
+            node {
+                image
+                meetingId
+                category
+                tag
+                host
+                passcode
+                description
+                link
+                roles2 {
+                    plan
+                }
+                descriptions {
+                    paragraph
+                    date
+                }
+            }
+        }
+    }
+}
+query getAllEventDetailPageBasedOnMeetingId($meetingId: Float) {
+    allEventdetailpages(first: 1000) {
+        edges {
+            node {
+                image
+                meetingId
+                category
+                tag
+                host
+                passcode
+                description
+                link
+                roles2 {
+                    plan
+                }
+                descriptions {
+                    paragraph
+                    date
+                }
+            }
+        }
+    }
+    eventDetailPageByMeetingId: allEventdetailpages(where: { meetingId: $meetingId }) {
+        edges {
+            node {
+                image
+                meetingId
+                category
+                tag
+                host
+                passcode
+                description
+                link
+                roles2 {
+                    plan
+                }
+                descriptions {
+                    paragraph
+                    date
+                }
+            }
+        }
+    }
+}

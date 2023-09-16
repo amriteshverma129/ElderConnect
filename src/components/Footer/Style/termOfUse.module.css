@@ -1,0 +1,98 @@
+.termOfUse {
+  padding: 50px 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .termOfUse {
+    padding: 30px 0 0;
+  }
+}
+.termOfUse .termOfUse-heading {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  color: #142c60;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .termOfUse .termOfUse-heading {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .termOfUse .termOfUse-heading {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+}
+.termOfUse .termOfUse-para {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 60px;
+  color: #142c60;
+}
+@media only screen and (max-width: 1024px) {
+  .termOfUse .termOfUse-para {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .termOfUse .termOfUse-para {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+}
+.termOfUse .termOfUse-para .termOfUse-contact-emailId {
+  color: #d92d3e;
+  text-decoration: underline;
+}
+.termOfUse .termOfUse-para .termOfUse-contact-emailId a {
+  color: #d92d3e;
+}
+
+.termOfUse-skeleton {
+  padding: 50px 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .termOfUse-skeleton {
+    padding: 30px 0 0;
+  }
+}
+.termOfUse-skeleton .termOfUse-heading-skeleton {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .termOfUse-skeleton .termOfUse-heading-skeleton {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .termOfUse-skeleton .termOfUse-heading-skeleton {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+}
+.termOfUse-skeleton .termOfUse-para-skeleton {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 1024px) {
+  .termOfUse-skeleton .termOfUse-para-skeleton {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .termOfUse-skeleton .termOfUse-para-skeleton {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+}/*# sourceMappingURL=termOfUse.module.css.map */

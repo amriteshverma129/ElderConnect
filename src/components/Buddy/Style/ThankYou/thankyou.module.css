@@ -1,0 +1,176 @@
+@charset "UTF-8";
+.infusion-form {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 24px;
+  padding: 50px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .infusion-form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .infusion-form {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .infusion-form {
+    padding: 0;
+    border: 0;
+  }
+}
+.infusion-form .infusion-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 24px;
+}
+@media screen and (max-width: 1024px) {
+  .infusion-form .infusion-container {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+}
+.infusion-form .infusion-field label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 4px;
+  color: #142c60;
+  width: 100%;
+}
+.infusion-form .infusion-field label span {
+  color: #d92d3e;
+}
+.infusion-form .infusion-field label span[id=tag] {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.infusion-form .infusion-field input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #444444;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 30px;
+  border: 1px solid #142c60;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  .infusion-form .infusion-field input {
+    margin-bottom: 24px;
+  }
+}
+.infusion-form .infusion-field textarea {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #444444;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid #142c60;
+  resize: none;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  .infusion-form .infusion-field textarea {
+    margin-bottom: 24px;
+  }
+}
+.infusion-form .infusion-field .infusion-field-input-container {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 32px;
+  color: #444444;
+  width: 100%;
+  padding-right: 10px;
+  border-radius: 30px;
+  border: 1px solid #142c60;
+}
+.infusion-form .infusion-field .infusion-field-input-container select {
+  border: none;
+  padding: 10px 0px 10px 10px;
+  border-radius: 30px;
+  width: 100%;
+  color: #444444;
+}
+.infusion-form .infusion-field .infusion-field-input-container select:focus-visible {
+  border: none;
+  outline: 0px;
+}
+@media screen and (max-width: 768px) {
+  .infusion-form .infusion-field .infusion-field-input-container {
+    margin-bottom: 24px;
+  }
+}
+.infusion-form .infusion-field .infusion-checkbox-group {
+  margin-bottom: 20px;
+}
+.infusion-form .infusion-field .infusion-checkbox-group .infusion-checkbox {
+  display: flex;
+  align-items: center;
+}
+.infusion-form .infusion-field .infusion-checkbox-group .infusion-checkbox input[type=checkbox] {
+  display: none;
+}
+.infusion-form .infusion-field .infusion-checkbox-group .infusion-checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+}
+.infusion-form .infusion-field .infusion-checkbox-group .infusion-checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+.infusion-form .infusion-field .infusion-checkbox-group .infusion-checkbox input[type=checkbox]:checked + label:before {
+  content: "✓";
+  color: #ffffff;
+  background-color: #142c60;
+  text-align: center;
+  line-height: 18px;
+}
+.infusion-form .infusion-submit {
+  display: flex;
+  justify-content: center;
+}
+.infusion-form .infusion-submit button {
+  border-radius: 30px;
+  background-color: #d92d3e;
+  color: #ffffff;
+  width: 250px;
+  border: 1px solid #d92d3e;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+}
+.infusion-form .infusion-submit button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.infusion-form .infusion-submit button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .infusion-form .infusion-submit button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=thankyou.module.css.map */

@@ -1,0 +1,26 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.rating-Review {
+    .rating-Review-value {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        @include text-18-600;
+        color: $Highlighter3;
+        padding-top: 8px;
+        @media only screen and (min-width: 1024px) and (max-width: 1220px) {
+            font-size: 16px;
+        }
+    }
+    .rating-Review-dot {
+        margin-left: 16px;
+        margin-right: 16px;
+        height: 6px;
+        width: 6px;
+        flex: 0 0 6px;
+        background-color: $Highlighter3;
+        border-radius: 50%;
+    }
+}

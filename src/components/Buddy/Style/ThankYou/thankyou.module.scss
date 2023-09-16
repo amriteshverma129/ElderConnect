@@ -1,0 +1,111 @@
+@import "../../../../styles/typography/typography";
+@import "../../../../styles/color/color";
+@import "../../../../styles/button/button";
+@import "../../../../styles/form/form";
+
+.infusion-form {
+    @include form-global(100%);
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+        border: 0;
+    }
+
+    .infusion-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 24px;
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            grid-gap: 0px;
+        }
+    }
+    .infusion-field {
+        label {
+            @include form-label;
+        }
+        input {
+            @include form-input;
+            margin-bottom: 32px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 24px;
+            }
+        }
+        textarea {
+            @include form-textarea;
+            margin-bottom: 32px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 24px;
+            }
+        }
+        .infusion-field-input-container {
+            @include text-18-400;
+            margin-bottom: 32px;
+            color: $Highlighter4;
+            width: 100%;
+            padding-right: 10px;
+            border-radius: 30px;
+            border: 1px solid $Highlighter3;
+            select {
+                border: none;
+                padding: 10px 0px 10px 10px;
+                border-radius: 30px;
+                width: 100%;
+                color: $Highlighter4;
+                &:focus-visible {
+                    border: none;
+                    outline: 0px;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                margin-bottom: 24px;
+            }
+        }
+        .infusion-checkbox-group {
+            margin-bottom: 20px;
+            .infusion-checkbox {
+                display: flex;
+                align-items: center;
+                input[type="checkbox"] {
+                    display: none;
+                }
+                label {
+                    display: inline-block;
+                    cursor: pointer;
+                    padding-left: 25px;
+                    position: relative;
+                }
+
+                label:before {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                    margin-right: 10px;
+                    background-color: $White;
+                }
+                input[type="checkbox"]:checked + label:before {
+                    content: "\2713";
+                    color: $White;
+                    background-color: $Highlighter3;
+                    text-align: center;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    .infusion-submit {
+        display: flex;
+        justify-content: center;
+        button {
+            @include btn-solid(250px, $Primary);
+            @include btn-normal;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,210 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.community-header-section {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 68px;
+    width: 100vw;
+    height: 400px;
+    .community-header-title {
+        color: $White;
+        @include justify-center;
+        text-align: center;
+        h1 {
+            @media only screen and (max-width: 576px) {
+                font-size: 20px;
+                width: 327px;
+                line-height: 40px;
+                font-weight: 700;
+            }
+        }
+        h6 {
+            font-weight: 300;
+            margin-top: 20px;
+
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+                width: 206px;
+                margin: 0 auto;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+.community-heading-sortBy-holder {
+    @include flex(center, space-between);
+    flex-direction: row;
+    margin-top: 430px;
+    margin-bottom: 10px;
+    gap: 25px;
+    .community-heading {
+        @include text-24-500;
+        color: $Secondary;
+    }
+    .community-search-Box {
+        width: 100%;
+        @media only screen and (min-width: 1024px) {
+            display: none;
+        }
+    }
+    .community-sortBy-button {
+        @include btn-normal;
+        justify-content: center;
+        margin: 20px auto;
+        @media only screen and (max-width: 1024px) {
+            display: flex;
+            @include text-18-600;
+        }
+    }
+    .community-dropdown {
+        border: 2px solid $Dark;
+        border-radius: 40px;
+        padding: 5px 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .community-dropdown-label {
+            width: 90px;
+            @include text-18-400;
+        }
+        .community-dropdown2 {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            width: 180px;
+            @include text-18-500;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 100%;
+        }
+        @media only screen and (max-width: 560px) {
+            .community-dropdown-label {
+                width: 92px;
+            }
+        }
+    }
+    .community-filter-btn {
+        @include text-18-600;
+        padding: 12px 20px;
+        @include btn-solid(280px, $Dark);
+        @media only screen and (max-width: 768px) {
+            @include btn-solid(100%, $Dark);
+        }
+        @media only screen and (min-width: 1024px) {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.community-filters-card-holder {
+    @include grid(35% 1fr, 1fr, 1fr, 20px);
+    position: relative;
+    .community-filters {
+        padding: 32px;
+        border-radius: 10px;
+        border: 1px solid $Borders;
+        width: 400px;
+        box-shadow: 0px 8px 30px $BuddyBoxShadow;
+        background: $White;
+        .community-search-title-holder {
+            margin-bottom: 20px;
+            .community-title-cross-holder {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .community-title {
+                    @include text-24-600;
+                    margin-bottom: 10px;
+                }
+                .community-cross {
+                    display: none;
+                    @media only screen and (max-width: 1024px) {
+                        display: flex;
+                    }
+                }
+            }
+        }
+        .community-checkBox-holder {
+            .community-title-clearAll-holder {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .community-title {
+                    @include text-24-600;
+                }
+                .community-clearAll {
+                    color: $Primary;
+                    @include text-18-600;
+                }
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .community-filters2 {
+        padding: 20px;
+        position: absolute;
+        background-color: $White;
+        border: 1px solid $BorderGray;
+        border-radius: 10px;
+        z-index: 1000;
+        right: 0;
+        left: 0;
+        top: 0;
+        .community-search-title-holder {
+            margin-bottom: 20px;
+            .community-title-cross-holder {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .community-title {
+                    @include text-24-600;
+                    margin-bottom: 10px;
+                }
+                .community-cross {
+                    display: none;
+                    @media only screen and (max-width: 1024px) {
+                        display: flex;
+                    }
+                }
+            }
+            .community-sub-title {
+                @include text-24-600;
+                margin-bottom: 10px;
+            }
+        }
+        .community-checkBox-holder {
+            .community-title-clearAll-holder {
+                @include flex(center, space-between);
+                flex-direction: row;
+                margin-top: 25px;
+                .community-title {
+                    font-weight: 600;
+                    font-size: 18px;
+                    background: $Secondary;
+                    color: $White;
+                    border-radius: 100px;
+                    padding: 4px 15px;
+                }
+                .community-clearAll {
+                    color: $Secondary;
+                    font-weight: 600;
+                    font-size: 18px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

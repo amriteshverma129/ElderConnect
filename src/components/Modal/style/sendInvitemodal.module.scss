@@ -1,0 +1,58 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.send-invite-modal-user {
+    width: 768px;
+    background-color: $White;
+    font-size: 18px !important;
+    border-radius: 12px;
+    padding: 20px;
+    height: 80%;
+    overflow: auto;
+    @include justify-center;
+    .send-invite-modal-heading-crossicon {
+        @include flex(center, space-between);
+        margin: 15px;
+        .send-invite-modal-heading {
+            width: 223px;
+            height: 48px;
+            left: 30px;
+            top: 30px;
+            @include text-32-700;
+            color: $Highlighter4;
+        }
+        .send-invite-modal-crossicon {
+            left: 50.01%;
+            right: 7.14%;
+            top: 19.7%;
+            bottom: 37.44%;
+        }
+    }
+    .send-invite-modal-search-Box {
+        width: 95%;
+        margin: 13px;
+        background-color: $White;
+        border-radius: 20%;
+    }
+    .send-invite-modal-member-selected {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 12px;
+        width: 209px;
+        height: 30px;
+        left: 30px;
+        top: 174px;
+        @include text-20-700;
+        color: $Highlighter4;
+    }
+    .send-invite-modal-sendinvite-button {
+        @include btn-small;
+        @include btn-solid(142px, $Dark);
+        height: 48px;
+        margin-left: 15px;
+    }
+    @media only screen and (max-width: 576px) {
+        width: 450px;
+    }
+}

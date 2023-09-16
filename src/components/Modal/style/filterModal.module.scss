@@ -1,0 +1,291 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.filter-modal-holder {
+    // width: 660px;
+    width: 768px;
+    background-color: $White;
+    font-size: 18px !important;
+    border-radius: 10px;
+    padding: 20px;
+    max-height: 95vh;
+    overflow-y: auto;
+    @include justify-center;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding: 20px 8px;
+        max-height: 100%;
+        border-radius: 0;
+    }
+
+    .filter-modal-heading-cross-holder {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 10px;
+        div {
+            &:first-child {
+                @include text-32-700;
+            }
+        }
+
+        svg {
+            cursor: pointer;
+            g {
+                stroke: $Highlighter3;
+            }
+            path {
+                fill: $Highlighter3;
+            }
+        }
+    }
+    .filter-modal-subHeading {
+        color: $Highlighter3;
+        padding: 10px;
+        @include font(20px, 500, 30px);
+        @media only screen and (max-width: 768px) {
+            @include font(18px, 500, 28px);
+        }
+    }
+    .filter-title {
+        padding: 10px;
+        @include text-24-600;
+        color: $Highlighter4;
+        margin-top: 10px;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin-top: 0;
+        }
+    }
+    .filter-categories {
+        display: grid;
+        grid-template-columns: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
+        gap: 20px;
+        padding: 0 10px;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: minmax(100px, auto) minmax(100px, auto);
+            gap: 16px;
+        }
+        @media screen and (max-width: 576px) {
+            grid-template-columns: minmax(100px, auto);
+        }
+    }
+    .filter-modal-date-holder {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        @include text-18-500;
+        color: $Secondary;
+        gap: 20px;
+        justify-content: space-between;
+        .filter-modal-date {
+            border: 1px solid $Highlighter3;
+            border-radius: 30px;
+            padding: 8px 8px 8px 20px;
+            flex: 0 0 48%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            span {
+                padding-right: 10px;
+            }
+            input {
+                border: none;
+                flex: 1;
+                color: $Highlighter3;
+                position: relative;
+                &:focus-visible {
+                    border: none;
+                    outline: 0px;
+                }
+            }
+            input[type="date"] {
+                background-image: url("/calendar.svg");
+                background-repeat: no-repeat;
+                background-position: right 10px center;
+                background-size: 16px;
+                text-transform: uppercase;
+                background-color: transparent;
+                height: 30px;
+            }
+
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                background: transparent;
+                bottom: 0;
+                color: transparent;
+                cursor: pointer;
+                height: auto;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: auto;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .second-input {
+                input {
+                    margin-left: 22px;
+                }
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            .filter-modal-date {
+                width: 100%;
+            }
+        }
+    }
+    .filter-modal-time-holder {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        @include text-18-500;
+        color: $Secondary;
+        gap: 20px;
+        justify-content: space-between;
+        .filter-modal-time {
+            border: 1px solid $Dark;
+            border-radius: 100px;
+            padding: 8px 8px 8px 20px;
+            flex: 0 0 48%;
+            display: flex;
+            span {
+                padding-right: 10px;
+            }
+            input {
+                border: none;
+                flex: 1;
+                color: $Highlighter4;
+                position: relative;
+                &:focus-visible {
+                    border: none;
+                    outline: 0px;
+                }
+            }
+            input[type="time"] {
+                background-image: url("/time.svg");
+                background-repeat: no-repeat;
+                background-position: right 10px center;
+                background-size: 16px;
+                text-transform: uppercase;
+                background-color: transparent;
+                height: 30px;
+            }
+            input[type="time"]::-webkit-calendar-picker-indicator {
+                background: transparent;
+                bottom: 0;
+                color: transparent;
+                cursor: pointer;
+                height: auto;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: auto;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            .filter-modal-time {
+                width: 100%;
+            }
+        }
+    }
+    .filter-modal-rating-holder {
+        padding: 10px;
+        @include grid(repeat(3, 1fr), repeat(3, 1fr), 1fr, 20px);
+        .filter-modal-rating {
+            border: 1px solid $Highlighter3;
+            border-radius: 100px;
+            padding: 10px 16px;
+            @include text-18-500;
+            @include flex(center, space-between);
+            cursor: pointer;
+
+            > span {
+                gap: 6px;
+            }
+
+            svg {
+                path {
+                    fill: $Highlighter3;
+                }
+            }
+        }
+        .filter-modal-rating-active {
+            background-color: $Highlighter3;
+            color: $White;
+            border: 1px solid $Highlighter3;
+
+            svg {
+                path {
+                    fill: $White;
+                }
+            }
+        }
+        .filter-modal-rating-no-active {
+            background-color: $White;
+            color: $Highlighter3;
+            border: 1px solid $Highlighter3;
+        }
+    }
+
+    .filter-modal-btn {
+        @include btn-outline(100%, $Highlighter3, 0px);
+        padding: 10px 30px;
+        white-space: nowrap;
+        @include text-20-500;
+        @media screen and (max-width: 576px) {
+            padding: 8px 25px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+    .filter-modal-btn-active {
+        @include btn-solid(100%, $Highlighter3);
+        margin: 0px;
+        padding: 10px 30px;
+        white-space: nowrap;
+        @include text-20-500;
+        &:hover {
+            background-color: $Highlighter3;
+            color: $White;
+        }
+        @media screen and (max-width: 576px) {
+            padding: 8px 25px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+    .filter-modal-btns {
+        position: sticky;
+        width: 100%;
+        bottom: -20px;
+        background-color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .filter-modal-apply-btn {
+        @include btn-normal;
+        @include btn-solid(fit-content, $Highlighter3);
+        margin-left: 10px;
+        margin-right: 10px;
+        @include text-18-600;
+    }
+    .filter-modal-clearAll-btn {
+        @include btn-link;
+        @include text-18-600;
+        color: $Highlighter3;
+        margin-left: 40px;
+    }
+}

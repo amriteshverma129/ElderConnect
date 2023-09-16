@@ -1,0 +1,253 @@
+.signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("https://images.prismic.io/loop-web-members/5e8b0393-e2bc-4032-9d8b-249fac2f76e6_image.webp?auto=compress,format");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 576px) {
+  .signUp {
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+.signUp .signUp-form-container,
+.signUp .login-form-container {
+  max-height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  padding: 40px 10px;
+}
+@media screen and (max-width: 576px) {
+  .signUp .signUp-form-container,
+  .signUp .login-form-container {
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+  }
+}
+.signUp .signUp-form {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 32px 40px;
+  max-width: 575px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .signUp .signUp-form {
+    padding: 16px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .signUp .signUp-form {
+    height: 100%;
+    justify-content: center;
+    border-radius: 0;
+    min-height: 100vh;
+  }
+}
+.signUp .signUp-form .signUp-back-btn {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  padding: 0;
+  color: #142c60;
+  cursor: pointer;
+  top: 20px;
+}
+.signUp .signUp-form .signUp-heading {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 46px;
+  text-align: center;
+  color: #142c60;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 576px) {
+  .signUp .signUp-form .signUp-heading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+.signUp .signUp-form .signUp-field {
+  padding-bottom: 20px;
+  position: relative;
+}
+.signUp .signUp-form .signUp-field label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 4px;
+  color: #142c60;
+  width: 100%;
+}
+.signUp .signUp-form .signUp-field label span {
+  color: #d92d3e;
+}
+.signUp .signUp-form .signUp-field label span[id=tag] {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.signUp .signUp-form .signUp-field .signUp-notice {
+  text-align: center;
+  text-decoration: underline;
+  color: #142c60;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.signUp .signUp-form .signUp-field .signUp-notice:hover {
+  color: #d92d3e;
+  transition: 0.3s ease;
+}
+.signUp .signUp-form .signUp-checkBox {
+  display: flex;
+  align-items: flex-start;
+}
+.signUp .signUp-form .signUp-checkBox label {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #444444;
+}
+@media screen and (max-width: 576px) {
+  .signUp .signUp-form .signUp-checkBox label {
+    margin-bottom: 4px;
+    margin-left: 10px !important;
+  }
+}
+.signUp .signUp-form .signUp-checkBox label a {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.signUp .signUp-form .signUp-checkBox label a:hover {
+  color: #d92d3e;
+  text-decoration-color: #d92d3e;
+  transition: all 0.3s ease;
+}
+.signUp .signUp-form .signUp-checkBox input {
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .signUp .signUp-form .signUp-checkBox input {
+    margin-top: 1px;
+  }
+}
+.signUp .signUp-form .signUp-checkBox input[type=checkbox] {
+  accent-color: #142c60;
+}
+.signUp .signUp-form .signUp-checkBox .signUp-termsCondition,
+.signUp .signUp-form .signUp-checkBox .signUp-fitnessWaiver {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.signUp .signUp-form .signUp-checkBox .signUp-termsCondition:hover,
+.signUp .signUp-form .signUp-checkBox .signUp-fitnessWaiver:hover {
+  color: #d92d3e;
+  transition: 0.3s ease;
+}
+.signUp .signUp-form .signUp-field-link {
+  padding-bottom: 0;
+}
+.signUp .signUp-form .signUp-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp .signUp-form .signUp-submit button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  border-radius: 30px;
+  background-color: #d92d3e;
+  color: #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #d92d3e;
+  transition: all 0.3s ease;
+  padding: 10px 50px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.signUp .signUp-form .signUp-submit button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.signUp .signUp-form .signUp-submit button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .signUp .signUp-form .signUp-submit button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+}
+.signUp .signUp-form .signUp-link {
+  padding-bottom: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.signUp .signUp-form .signUp-link label {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.signUp .signUp-form .signUp-link label span {
+  font-weight: 600;
+  text-decoration: underline;
+  color: #142c60;
+  transition: 0.3s ease;
+}
+.signUp .signUp-form .signUp-link label span:hover {
+  color: #d92d3e;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .signUp .signUp-form .signUp-link label {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=signUp.module.css.map */

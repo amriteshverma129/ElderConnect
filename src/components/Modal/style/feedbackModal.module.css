@@ -1,0 +1,130 @@
+.feedback-modal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.feedback-modal-holder {
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 24px;
+  padding: 30px;
+  width: 768px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .feedback-modal-holder {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .feedback-modal-holder {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .feedback-modal-holder {
+    padding: 16px;
+  }
+}
+.feedback-modal-holder .feedback-modal-heading-cross-holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto 10px;
+  letter-spacing: 0.4px;
+  color: #444444;
+}
+.feedback-modal-holder .feedback-modal-heading-cross-holder .feedback-modal-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+@media screen and (max-width: 576px) {
+  .feedback-modal-holder .feedback-modal-heading-cross-holder .feedback-modal-heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.feedback-modal-holder .feedback-modal-heading-cross-holder svg {
+  cursor: pointer;
+  margin-top: 8px;
+}
+.feedback-modal-holder .feedback-modal-heading-cross-holder svg path {
+  fill: #142c60;
+}
+.feedback-modal-holder .feedback-modal-heading-cross-holder svg g {
+  stroke: #142c60;
+}
+.feedback-modal-holder .feedback-title {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #444444;
+}
+.feedback-modal-holder .feedback-textarea-container {
+  padding: 0 10px;
+}
+.feedback-modal-holder .feedback-modal-rating {
+  margin: 0 10px 32px 10px;
+}
+.feedback-modal-holder .feedback-actions {
+  padding: 0 10px;
+}
+@media screen and (max-width: 576px) {
+  .feedback-modal-holder .feedback-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.feedback-modal-holder .feedback-modal-submit-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 180px;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.feedback-modal-holder .feedback-modal-submit-btn:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.feedback-modal-holder .feedback-modal-submit-btn:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .feedback-modal-holder .feedback-modal-submit-btn {
+    margin: 0;
+  }
+}
+.feedback-modal-holder .feedback-modal-cancel-btn {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #444444;
+}
+.feedback-modal-holder .feedback-modal-cancel-btn:hover {
+  color: #d92d3e;
+  text-decoration-color: #d92d3e;
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=feedbackModal.module.css.map */

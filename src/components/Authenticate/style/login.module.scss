@@ -1,0 +1,65 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+@import "../../../styles/form/form";
+
+.login {
+    @include form-container;
+    .login-form {
+        @include form;
+        position: relative;
+        .login-back-btn {
+            position: absolute;
+            background: transparent;
+            border: 0;
+            font-size: 20px;
+            padding: 0;
+            color: #142c60;
+            cursor: pointer;
+            top: 20px;
+        }
+        .login-heading {
+            @include form-heading;
+        }
+        .login-subHeading {
+            @include text-24-500;
+            text-align: center;
+            color: $Highlighter3;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            @media screen and (max-width: 576px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        .login-field {
+            padding-bottom: 30px;
+            position: relative;
+            label {
+                @include form-label;
+            }
+            .login-notice {
+                text-align: center;
+                text-decoration: underline;
+                color: $Highlighter3;
+                cursor: pointer;
+                transition: 0.3s ease;
+                width: fit-content;
+                margin: auto;
+                &:hover {
+                    color: $Primary;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+        .login-field-link {
+            padding-bottom: 0;
+        }
+        .login-submit {
+            @include form-submit;
+        }
+        .login-link {
+            @include form-link;
+        }
+    }
+}

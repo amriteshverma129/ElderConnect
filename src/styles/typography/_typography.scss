@@ -1,0 +1,139 @@
+@import "../color/color";
+
+@mixin tag {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 4px 18px;
+}
+
+@mixin content-center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin justify-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flex($alignItems, $justifyContent) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+@mixin grid($gridTemplateColumnDesk, $gridTemplateColumnsTablet, $gridTemplateColumnsMobile, $gridgap) {
+    display: grid;
+    grid-template-columns: $gridTemplateColumnDesk;
+    grid-gap: $gridgap;
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: $gridTemplateColumnsTablet;
+    }
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: $gridTemplateColumnsMobile;
+    }
+}
+@mixin font($fontSize, $fontWeight, $lineHeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}
+
+@mixin section-heading {
+    @include font(48px, 500, 72px);
+    @media only screen and (max-width: 576px) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@mixin card-title {
+    @include font(32px, 700, 46px);
+    @media only screen and (max-width: 576px) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@mixin text-18-400 {
+    @include font(18px, 400, 28px);
+}
+
+@mixin text-18-500 {
+    @include font(18px, 500, 28px);
+}
+
+@mixin text-18-600 {
+    @include font(18px, 600, 28px);
+}
+
+@mixin text-20-400 {
+    @include font(20px, 400, 30px);
+}
+
+@mixin text-20-500 {
+    @include font(20px, 500, 30px);
+}
+
+@mixin text-20-600 {
+    @include font(20px, 600, 30px);
+}
+
+@mixin text-20-700 {
+    @include font(20px, 700, 30px);
+}
+
+@mixin text-24-400 {
+    @include font(24px, 400, 36px);
+}
+
+@mixin text-24-500 {
+    @include font(24px, 500, 36px);
+}
+
+@mixin text-24-600 {
+    @include font(24px, 600, 36px);
+}
+@mixin text-24-700 {
+    @include font(24px, 700, 34px);
+}
+@mixin text-26-700 {
+    @include font(26px, 700, 40px);
+}
+
+@mixin text-32-400 {
+    @include font(32px, 400, 48px);
+}
+
+@mixin text-32-500 {
+    @include font(32px, 500, 48px);
+}
+
+@mixin text-32-700 {
+    @include font(32px, 700, 48px);
+}
+
+@mixin text-48-500 {
+    @include font(48px, 500, 72px);
+}
+
+@mixin text-48-700 {
+    @include font(48px, 700, 72px);
+}
+@mixin text-60-600 {
+    @include font(60px, 600, 80px);
+}
+@mixin text-64-500 {
+    @include font(64px, 500, 96px);
+}
+@mixin text-72-500 {
+    @include font(72px, 500, 108px);
+}
+@mixin text-72-700 {
+    @include font(72px, 700, 108px);
+}

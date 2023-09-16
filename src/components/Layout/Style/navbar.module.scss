@@ -1,0 +1,132 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.cart {
+    background-color: $Primary;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 20px;
+    color: $White;
+}
+.navbar-notification {
+    position: relative;
+    margin-left: 16px;
+    cursor: pointer;
+    svg {
+        height: 24px;
+        width: 24px;
+    }
+    > span {
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        border-radius: 15px;
+        background-color: $Primary;
+        right: 2px;
+        top: 2px;
+    }
+}
+.navbar-link-holder {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+    .navbar-link,
+    .navbar-link-active {
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        @include text-18-500;
+        color: $Dark;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        border-top: $White solid 2px;
+        border-bottom: $White solid 2px;
+        transition: all 0.3s ease;
+        position: relative;
+        &::before {
+            content: "";
+            height: 2px;
+            width: 0;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            background-color: $Primary;
+            transition: all 0.3s ease;
+        }
+        &:hover {
+            color: $Primary;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &::before {
+                left: 0;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .navbar-link-active {
+        color: $Primary;
+        &::before {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+.navbar {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px 140px;
+    height: 80px;
+    margin-top: 15px;
+
+    @media only screen and (max-width: 1800px) {
+        padding: 10px 70px;
+    }
+
+    @media only screen and (max-width: 1400px) {
+        padding: 10px 16px;
+    }
+
+    .navbar-brand {
+        @include flex(center, center);
+        cursor: pointer;
+        .navbar-brand-loop-image {
+            height: 78px;
+            width: 78px;
+            position: relative;
+            @media only screen and (max-width: 576px) {
+                width: 50px !important;
+                height: 50px !important;
+            }
+        }
+        .navbar-brand-partner-image {
+            height: 50px;
+            width: 140px;
+            position: relative;
+            @media only screen and (max-width: 576px) {
+                width: 130px;
+                height: 40px;
+            }
+        }
+    }
+    .navbar-brand-title {
+        color: $Highlighter3;
+        margin-left: 16px;
+        @include font(24px, 500, 34px);
+        cursor: pointer;
+    }
+}

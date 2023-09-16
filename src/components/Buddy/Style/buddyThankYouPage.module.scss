@@ -1,0 +1,107 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.buddy-thankyou {
+    .buddy-thankyou-box {
+        border-radius: 8px;
+        border: 1px solid $Borders;
+        background: $White;
+        @include flex(center, center);
+        flex-direction: column;
+        padding: 56px;
+        margin-top: 56px;
+        margin-bottom: 80px;
+        .buddy-thankyou-box-image {
+            position: relative;
+            height: 140px;
+            width: 555px;
+            @media screen and (max-width: 768px) {
+                height: 100px;
+                width: 400px;
+            }
+            @media screen and (max-width: 576px) {
+                height: 75px;
+                width: 290px;
+            }
+        }
+        .buddy-thankyou-box-para1 {
+            @include text-48-700;
+            color: $Highlighter3;
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                line-height: 36px;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+        }
+        .buddy-thankyou-box-para2 {
+            @include text-24-500;
+            text-align: center;
+            color: $Highlighter4;
+            margin-bottom: 0;
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+                line-height: 34px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            padding: 16px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    .buddy-thankyou-para {
+        @include text-32-500;
+        color: $Highlighter3;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .buddy-thankyou-tabs-holder {
+        width: 100%;
+        overflow-x: auto;
+        max-width: 1200px;
+        margin: auto;
+        .buddy-thankyou-tabs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin: 64px 0 10px 0;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (max-width: 576px) {
+                grid-template-columns: 1fr;
+            }
+            .buddy-thankyou-tab {
+                @include text-18-500;
+                text-align: center;
+                padding: 8px;
+                color: $Highlighter4;
+                border-bottom: 3px solid $Highlighter4;
+                cursor: pointer;
+            }
+            .buddy-thankyou-tab-active {
+                @include text-18-500;
+                text-align: center;
+                padding: 8px;
+                color: $Highlighter3;
+                border-bottom: 3px solid $Highlighter3;
+                cursor: pointer;
+            }
+        }
+    }
+    .buddy-thankyou-tab-body {
+        max-width: 1200px;
+        margin: 64px auto 0;
+        @media screen and (max-width: 1024px) {
+            margin: 30px auto;
+        }
+    }
+}

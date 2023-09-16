@@ -1,0 +1,120 @@
+{
+  "id": "eventdetailpage",
+  "label": "EventDetailPage",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Event Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "meeting-id": {
+        "type": "Number",
+        "config": {
+          "label": "Meeting Id",
+          "placeholder": ""
+        }
+      },
+      "category": {
+        "type": "Text",
+        "config": {
+          "label": "Category",
+          "placeholder": ""
+        }
+      },
+      "host": {
+        "type": "Text",
+        "config": {
+          "label": "Host",
+          "placeholder": ""
+        }
+      },
+      "passcode": {
+        "type": "Text",
+        "config": {
+          "label": "Passcode",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "link": {
+        "type": "Text",
+        "config": {
+          "label": "Link",
+          "placeholder": ""
+        }
+      },
+      "roles2": {
+        "type": "Group",
+        "config": {
+          "label": "Roles2",
+          "fields": {
+            "plan": {
+              "type": "Select",
+              "config": {
+                "label": "Plan",
+                "placeholder": "",
+                "options": [
+                  "The Loop Trial Role",
+                  "The Loop Member Role",
+                  "The Loop Cafe Member Role",
+                  "The Loop Buddy Client Membership Role",
+                  "The Loop Buddy Client Single Purchase Role",
+                  "The Loop MemberSUSP",
+                  "The Loop MemberCANC",
+                  "The Loop MemberPAYF",
+                  "Staff Access Role",
+                  "Village Buddy Role",
+                  "The Loop Spectrum Role",
+                  "The Loop One Generation Role",
+                  "The Loop USC Role",
+                  "The LOOP Sampler Role"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "descriptions": {
+        "type": "Group",
+        "config": {
+          "label": "Descriptions",
+          "fields": {
+            "paragraph": {
+              "type": "Text",
+              "config": {
+                "label": "Paragraph",
+                "placeholder": ""
+              }
+            },
+            "date": {
+              "type": "Date",
+              "config": {
+                "label": "Date",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "tag": {
+        "type": "Text",
+        "config": {
+          "label": "Tag",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

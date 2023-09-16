@@ -1,0 +1,383 @@
+.filter-modal-holder {
+  width: 768px;
+  background-color: #ffffff;
+  font-size: 18px !important;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 95vh;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 768px) {
+  .filter-modal-holder {
+    width: 100%;
+    padding: 20px 8px;
+    max-height: 100%;
+    border-radius: 0;
+  }
+}
+.filter-modal-holder .filter-modal-heading-cross-holder {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 10px;
+}
+.filter-modal-holder .filter-modal-heading-cross-holder div:first-child {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.filter-modal-holder .filter-modal-heading-cross-holder svg {
+  cursor: pointer;
+}
+.filter-modal-holder .filter-modal-heading-cross-holder svg g {
+  stroke: #142c60;
+}
+.filter-modal-holder .filter-modal-heading-cross-holder svg path {
+  fill: #142c60;
+}
+.filter-modal-holder .filter-modal-subHeading {
+  color: #142c60;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .filter-modal-holder .filter-modal-subHeading {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+.filter-modal-holder .filter-title {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #444444;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .filter-modal-holder .filter-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .filter-modal-holder .filter-title {
+    margin-top: 0;
+  }
+}
+.filter-modal-holder .filter-categories {
+  display: grid;
+  grid-template-columns: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
+  gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .filter-modal-holder .filter-categories {
+    grid-template-columns: minmax(100px, auto) minmax(100px, auto);
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .filter-modal-holder .filter-categories {
+    grid-template-columns: minmax(100px, auto);
+  }
+}
+.filter-modal-holder .filter-modal-date-holder {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #222222;
+  gap: 20px;
+  justify-content: space-between;
+}
+.filter-modal-holder .filter-modal-date-holder .filter-modal-date {
+  border: 1px solid #142c60;
+  border-radius: 30px;
+  padding: 8px 8px 8px 20px;
+  flex: 0 0 48%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.filter-modal-holder .filter-modal-date-holder .filter-modal-date span {
+  padding-right: 10px;
+}
+.filter-modal-holder .filter-modal-date-holder .filter-modal-date input {
+  border: none;
+  flex: 1;
+  color: #142c60;
+  position: relative;
+}
+.filter-modal-holder .filter-modal-date-holder .filter-modal-date input:focus-visible {
+  border: none;
+  outline: 0px;
+}
+.filter-modal-holder .filter-modal-date-holder .filter-modal-date input[type=date] {
+  background-image: url("/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  text-transform: uppercase;
+  background-color: transparent;
+  height: 30px;
+}
+.filter-modal-holder .filter-modal-date-holder .filter-modal-date input[type=date]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+@media only screen and (max-width: 768px) {
+  .filter-modal-holder .filter-modal-date-holder .second-input input {
+    margin-left: 22px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .filter-modal-holder .filter-modal-date-holder {
+    flex-direction: column;
+  }
+  .filter-modal-holder .filter-modal-date-holder .filter-modal-date {
+    width: 100%;
+  }
+}
+.filter-modal-holder .filter-modal-time-holder {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #222222;
+  gap: 20px;
+  justify-content: space-between;
+}
+.filter-modal-holder .filter-modal-time-holder .filter-modal-time {
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 8px 8px 8px 20px;
+  flex: 0 0 48%;
+  display: flex;
+}
+.filter-modal-holder .filter-modal-time-holder .filter-modal-time span {
+  padding-right: 10px;
+}
+.filter-modal-holder .filter-modal-time-holder .filter-modal-time input {
+  border: none;
+  flex: 1;
+  color: #444444;
+  position: relative;
+}
+.filter-modal-holder .filter-modal-time-holder .filter-modal-time input:focus-visible {
+  border: none;
+  outline: 0px;
+}
+.filter-modal-holder .filter-modal-time-holder .filter-modal-time input[type=time] {
+  background-image: url("/time.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  text-transform: uppercase;
+  background-color: transparent;
+  height: 30px;
+}
+.filter-modal-holder .filter-modal-time-holder .filter-modal-time input[type=time]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+@media only screen and (max-width: 768px) {
+  .filter-modal-holder .filter-modal-time-holder {
+    flex-direction: column;
+  }
+  .filter-modal-holder .filter-modal-time-holder .filter-modal-time {
+    width: 100%;
+  }
+}
+.filter-modal-holder .filter-modal-rating-holder {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .filter-modal-holder .filter-modal-rating-holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .filter-modal-holder .filter-modal-rating-holder {
+    grid-template-columns: 1fr;
+  }
+}
+.filter-modal-holder .filter-modal-rating-holder .filter-modal-rating {
+  border: 1px solid #142c60;
+  border-radius: 100px;
+  padding: 10px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.filter-modal-holder .filter-modal-rating-holder .filter-modal-rating > span {
+  gap: 6px;
+}
+.filter-modal-holder .filter-modal-rating-holder .filter-modal-rating svg path {
+  fill: #142c60;
+}
+.filter-modal-holder .filter-modal-rating-holder .filter-modal-rating-active {
+  background-color: #142c60;
+  color: #ffffff;
+  border: 1px solid #142c60;
+}
+.filter-modal-holder .filter-modal-rating-holder .filter-modal-rating-active svg path {
+  fill: #ffffff;
+}
+.filter-modal-holder .filter-modal-rating-holder .filter-modal-rating-no-active {
+  background-color: #ffffff;
+  color: #142c60;
+  border: 1px solid #142c60;
+}
+.filter-modal-holder .filter-modal-btn {
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #142c60;
+  width: 100%;
+  margin: 0px;
+  align-self: center;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  padding: 10px 30px;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.filter-modal-holder .filter-modal-btn:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  color: #ffffff;
+  border: 0px;
+  pointer-events: none;
+}
+.filter-modal-holder .filter-modal-btn:hover {
+  background-color: #142c60;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .filter-modal-holder .filter-modal-btn {
+    padding: 8px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+.filter-modal-holder .filter-modal-btn-active {
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: 100%;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  margin: 0px;
+  padding: 10px 30px;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.filter-modal-holder .filter-modal-btn-active:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.filter-modal-holder .filter-modal-btn-active:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+.filter-modal-holder .filter-modal-btn-active:hover {
+  background-color: #142c60;
+  color: #ffffff;
+}
+@media screen and (max-width: 576px) {
+  .filter-modal-holder .filter-modal-btn-active {
+    padding: 8px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+.filter-modal-holder .filter-modal-btns {
+  position: sticky;
+  width: 100%;
+  bottom: -20px;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.filter-modal-holder .filter-modal-apply-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #142c60;
+  color: #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #142c60;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.filter-modal-holder .filter-modal-apply-btn:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.filter-modal-holder .filter-modal-apply-btn:hover {
+  background-color: #ffffff;
+  color: #142c60;
+  transition: all 0.3s ease;
+}
+.filter-modal-holder .filter-modal-clearAll-btn {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #142c60;
+  margin-left: 40px;
+}
+.filter-modal-holder .filter-modal-clearAll-btn:hover {
+  color: #d92d3e;
+  text-decoration-color: #d92d3e;
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=filterModal.module.css.map */

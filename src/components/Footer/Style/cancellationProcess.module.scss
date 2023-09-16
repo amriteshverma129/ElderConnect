@@ -1,0 +1,142 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+@import "../../../styles/form/form";
+
+.cancellationProcess-heading {
+    @include font(32px, 600, 46px);
+    color: $Highlighter3;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    @media screen and (max-width: 576px) {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+.cancellationProcess {
+    display: flex;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .cancellationProcess-para {
+        @include text-24-600;
+        margin-bottom: 20px;
+        color: $Highlighter3;
+        width: 450px;
+        span {
+            &:first-child {
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            width: 370px;
+            @include text-20-600;
+        }
+        @media screen and (max-width: 768px) {
+            @include text-18-600;
+            width: 100%;
+        }
+    }
+    .infusion-form {
+        flex: 1;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            padding: 0;
+            border: 0;
+        }
+        p {
+            @include text-18-400;
+            color: $Highlighter3;
+        }
+        label {
+            // @include form-label;
+            display: block;
+            @include text-24-600;
+            color: $Highlighter3;
+            width: 100%;
+            span {
+                color: $Primary;
+            }
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+            }
+        }
+        .infusion-submit {
+            @include form-submit;
+            justify-content: flex-start;
+        }
+        @media only screen and (max-width: 768px) {
+            gap: 4px;
+        }
+    }
+}
+
+.cancellationProcess-heading-skeleton {
+    line-height: 50px;
+    width: 300px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    @media screen and (max-width: 576px) {
+        line-height: 40px;
+    }
+}
+
+.cancellationProcess-skeleton {
+    display: flex;
+    gap: 100px;
+    height: auto;
+    @media only screen and (max-width: 1024px) {
+        gap: 70px;
+    }
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .cancellationProcess-para-skeleton {
+        @include text-24-600;
+        width: 450px;
+        height: auto;
+        span {
+            &:first-child {
+                width: 270px;
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            width: 370px;
+            @include text-20-600;
+        }
+        @media screen and (max-width: 768px) {
+            @include text-18-600;
+            width: 100%;
+        }
+    }
+    .infusion-form-skeleton {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        height: auto;
+        @media only screen and (max-width: 768px) {
+            border: 0;
+            padding: 0;
+            gap: 15px;
+        }
+        .infusion-submit-skeleton {
+            height: 45px;
+            width: 190px;
+            @media only screen and (max-width: 576px) {
+                width: 100%;
+            }
+        }
+    }
+}

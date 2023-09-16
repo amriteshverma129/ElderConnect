@@ -1,0 +1,9 @@
+.account-blockedUser .account-blockedUser-search-Box {
+  width: 60%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .account-blockedUser .account-blockedUser-search-Box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=blockedUser.module.css.map */

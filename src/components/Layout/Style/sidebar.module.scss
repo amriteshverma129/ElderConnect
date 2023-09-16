@@ -1,0 +1,69 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.sidebar {
+    color: $Highlighter3;
+    background-color: $White;
+    border-radius: 5px;
+    width: 250px;
+    @media only screen and (max-width: 768px) {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar-title {
+        display: none;
+        padding: 15px 10px;
+        @include text-24-600;
+        color: $Highlighter3;
+        svg {
+            path {
+                fill: $Highlighter3;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            display: flex;
+        }
+    }
+    .sidebar-divider1 {
+        margin: 0px auto;
+        display: none;
+    }
+    .sidebar-list {
+        list-style: none;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        .sidebar-item,
+        .sidebar-item-active {
+            padding: 16px;
+            border-left: 3px solid $White;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            @media screen and (max-width: 768px) {
+                @include text-20-500;
+                color: $Highlighter3;
+            }
+            &:hover,
+            &.active {
+                color: $Primary;
+                border-left: 3px solid $Primary;
+                transition: all 0.3s ease;
+            }
+            .sidebar-link,
+            a {
+                @include text-20-500;
+                width: 100%;
+                &:hover {
+                    color: $Primary;
+                }
+            }
+        }
+
+        .sidebar-item-active {
+            border-left: 3px solid $Primary;
+            color: $Primary;
+        }
+    }
+}

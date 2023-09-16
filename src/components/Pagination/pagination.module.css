@@ -1,0 +1,88 @@
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .pagination {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.pagination .pagination-left-arrow {
+  background-color: transparent;
+  border-radius: 25px;
+  width: 45px;
+  height: 45px;
+  outline: none;
+  border: 2px solid #142c60;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-left-arrow svg path {
+  fill: #142c60;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-left-arrow:hover {
+  border: 2px solid #d92d3e;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-left-arrow:hover svg path {
+  fill: #d92d3e;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-left-arrow:disabled {
+  opacity: 0.25;
+}
+.pagination .pagination-left-arrow:disabled:hover {
+  border: 2px solid #142c60;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-left-arrow:disabled:hover svg path {
+  fill: #142c60;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-right-arrow {
+  background-color: transparent;
+  border-radius: 25px;
+  width: 45px;
+  height: 45px;
+  outline: none;
+  border: 2px solid #142c60;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-right-arrow svg path {
+  fill: #142c60;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-right-arrow:hover {
+  border: 2px solid #d92d3e;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-right-arrow:hover svg path {
+  fill: #d92d3e;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-right-arrow:disabled {
+  opacity: 0.25;
+}
+.pagination .pagination-right-arrow:disabled:hover {
+  border: 2px solid #142c60;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-right-arrow:disabled:hover svg path {
+  fill: #142c60;
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=pagination.module.css.map */

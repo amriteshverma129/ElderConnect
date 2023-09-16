@@ -1,0 +1,86 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+@import "../../../styles/form/form";
+
+.contactUs {
+    @include flex(flex-start, center);
+    height: 100vh;
+    padding: 16px;
+    overflow-y: auto;
+    .contactUs-pop-up {
+        @include content-center(column);
+        @include form-global(575px, 550px, 30px);
+        margin: auto;
+        background: $White;
+        @media only screen and (max-width: 768px) {
+            padding: 16px;
+        }
+        .contactUs-heading-cross-holder {
+            @include flex(flex-start, space-between);
+            flex-direction: row;
+            margin-bottom: 10px;
+            color: $Highlighter3;
+            width: 100%;
+            .contactUs-heading {
+                @include text-32-700;
+                padding-right: 16px;
+                flex: 1;
+                @media screen and (max-width: 576px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            .contactUs-heading2 {
+                @include font(26px, 600, 36px);
+                padding-right: 16px;
+                flex: 1;
+                @media screen and (max-width: 576px) {
+                    @include font(22px, 500, 32px);
+                }
+            }
+            svg {
+                cursor: pointer;
+                margin-top: 10px;
+                path {
+                    fill: $Highlighter3;
+                }
+                g {
+                    stroke: $Highlighter3;
+                }
+            }
+        }
+        .infusion-form {
+            width: 100%;
+            .infusion-submit {
+                @include form-submit;
+            }
+            .contactUs-field {
+                padding-bottom: 30px;
+                position: relative;
+                label {
+                    @include form-label;
+                }
+                .contactUs-notice {
+                    text-align: center;
+                    text-decoration: underline;
+                    color: $Highlighter3;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    width: fit-content;
+                    margin: auto;
+                    &:hover {
+                        color: $Primary;
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+            .contactUs-field-link {
+                padding-bottom: 0;
+            }
+            .contactUs-submit {
+                @include form-submit;
+            }
+        }
+    }
+}

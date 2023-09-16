@@ -1,0 +1,285 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.event-detail {
+    .event-detail-content {
+        margin: 35px 0;
+        .event-detail-title {
+            @include text-32-700;
+            color: $Highlighter3;
+            margin-bottom: 6px;
+            @media only screen and (max-width: 576px) {
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 0px;
+            }
+        }
+        .event-detail-time {
+            display: flex;
+            align-items: center;
+            @include text-20-700;
+            color: $Primary;
+            @media only screen and (max-width: 576px) {
+                font-size: 18px;
+                line-height: 28px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .event-detail-line {
+                width: 2px;
+                height: 20px;
+                display: inline-block;
+                margin-left: 20px;
+                margin-right: 20px;
+                background-color: $BorderGray;
+                @media only screen and (max-width: 600px) {
+                    display: none;
+                }
+            }
+            .event-detail-time2 {
+                display: flex;
+                align-items: center;
+                @media only screen and (max-width: 600px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+            .event-detail-tag {
+                display: inline-block;
+                margin-left: auto;
+                @include text-18-600;
+                padding: 10px 20px;
+                background-color: $Highlighter3;
+                color: $White;
+                border-radius: 100px;
+                text-transform: capitalize;
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                }
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            margin: 20px auto;
+        }
+    }
+    .event-detail-image-about-holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        @media only screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .event-detail-image {
+            width: 100%;
+            aspect-ratio: 16/10;
+            position: relative;
+            img {
+                border-radius: 10px;
+            }
+            @media only screen and (max-width: 1024px) {
+                margin: auto auto;
+            }
+        }
+
+        .event-detail-about {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .event-detail-heading {
+                @include text-32-700;
+                color: $Highlighter3;
+                margin-bottom: -10px;
+                @media only screen and (min-width: 1024px) and (max-width: 1265px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+                @media only screen and (max-width: 576px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            .event-detail-countdown-timer {
+                display: flex;
+                flex-direction: row;
+                color: $Highlighter3;
+            }
+            .event-detail-rating-btn-holder {
+                display: flex;
+                flex-direction: row;
+                @media only screen and (max-width: 576px) {
+                    flex-direction: column;
+                    gap: 8px;
+                }
+                svg {
+                    width: 25px;
+                    height: 25px;
+                    @media only screen and (min-width: 1024px) and (max-width: 1265px) {
+                        width: 17px;
+                    }
+                }
+                .event-detail-feedback-btn {
+                    @include btn-link;
+                    @include text-18-600;
+                    color: $Highlighter3;
+                    margin-top: 4px;
+                    margin-left: 20px;
+                    @media only screen and (max-width: 576px) {
+                        margin-left: 0px;
+                    }
+                }
+            }
+            .event-detail-category-holder {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                @media only screen and (max-width: 576px) {
+                    align-items: flex-start;
+
+                    svg {
+                        margin-top: 4px;
+                    }
+                }
+                @media only screen and (min-width: 1024px) and (max-width: 1265px) {
+                    align-items: flex-start;
+
+                    svg {
+                        margin-top: 4px;
+                    }
+                }
+                .event-detail-category {
+                    margin-left: 16px;
+                    display: inline-flex;
+                    align-items: center;
+                    @include text-20-700;
+                    color: $Highlighter4;
+                    @media only screen and (min-width: 1024px) and (max-width: 1265px) {
+                        font-size: 15px;
+                    }
+                    @media only screen and (max-width: 576px) {
+                        align-items: flex-start;
+                        flex-direction: column;
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    .event-detail-line {
+                        width: 2px;
+                        height: 20px;
+                        display: inline-block;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        background-color: $BorderGray;
+                        @media only screen and (max-width: 576px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .event-detail-para {
+                @include font(18px, 500, 34px);
+                color: $Highlighter4;
+                margin-top: -10px;
+                .event-detail-link {
+                    color: $Linkcolor;
+                }
+                .event-detail-readMore {
+                    font-weight: 700;
+                    > span {
+                        text-decoration: underline;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            color: $Primary;
+                            text-decoration-color: $Primary;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                }
+            }
+            .event-detail-btn {
+                button {
+                    @include btn-normal;
+                    @include btn-solid(250px, $Highlighter3);
+                    @include text-18-600;
+                    @media screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// EventDetailskeleton scss code.
+
+.event-detail-skeleton {
+    .event-detail-content-skeleton {
+        margin: 35px 0;
+        @media only screen and (max-width: 1024px) {
+            margin: 20px auto;
+        }
+        .event-detail-time-skeleton {
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width: 576px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .event-detail-tag-skeleton {
+                display: inline-block;
+                margin-left: auto;
+                width: 230px;
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                }
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .event-detail-image-about-holder-skeleton {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        @media only screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+        .event-detail-image-holder-skeleton {
+            width: 100%;
+            @media only screen and (max-width: 1024px) {
+                margin: auto auto;
+            }
+            .event-detail-image-skeleton {
+                width: 100%;
+                max-height: 768px;
+                aspect-ratio: 16/10;
+                position: relative;
+            }
+        }
+        .event-detail-about-skeleton {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .event-detail-btn-holder-skeleton {
+                .event-detail-btn-skeleton {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 300px;
+                    @media only screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

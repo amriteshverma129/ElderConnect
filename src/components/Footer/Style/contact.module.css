@@ -1,0 +1,182 @@
+.contact-heading {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 46px;
+  color: #142c60;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 576px) {
+  .contact-heading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.contact {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+.contact .contact-para {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 20px;
+  color: #142c60;
+  width: 450px;
+}
+.contact .contact-para span:first-child {
+  margin-bottom: 20px;
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .contact .contact-para {
+    width: 370px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .contact-para {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 100%;
+  }
+}
+.contact .infusion-form {
+  flex: 1;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .contact .infusion-form {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+.contact .infusion-form .infusion-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+}
+.contact .infusion-form .infusion-submit button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  border-radius: 30px;
+  background-color: #d92d3e;
+  color: #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #d92d3e;
+  transition: all 0.3s ease;
+  padding: 10px 50px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.contact .infusion-form .infusion-submit button:disabled {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0px;
+  pointer-events: none;
+}
+.contact .infusion-form .infusion-submit button:hover {
+  background-color: #ffffff;
+  color: #d92d3e;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 576px) {
+  .contact .infusion-form .infusion-submit button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+}
+
+.contact-heading-skeleton {
+  line-height: 50px;
+  width: 190px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 576px) {
+  .contact-heading-skeleton {
+    line-height: 40px;
+  }
+}
+
+.contact-skeleton {
+  display: flex;
+  gap: 100px;
+  height: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-skeleton {
+    gap: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-skeleton {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+.contact-skeleton .contact-para-skeleton {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  width: 450px;
+  height: auto;
+}
+.contact-skeleton .contact-para-skeleton span:first-child {
+  width: 270px;
+  margin-bottom: 20px;
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .contact-skeleton .contact-para-skeleton {
+    width: 370px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-skeleton .contact-para-skeleton {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 100%;
+  }
+}
+.contact-skeleton .infusion-form-skeleton {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .contact-skeleton .infusion-form-skeleton {
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+}
+.contact-skeleton .infusion-form-skeleton .infusion-submit-skeleton {
+  margin-top: 30px;
+  height: 45px;
+  width: 190px;
+}
+@media only screen and (max-width: 576px) {
+  .contact-skeleton .infusion-form-skeleton .infusion-submit-skeleton {
+    width: 100%;
+  }
+}/*# sourceMappingURL=contact.module.css.map */

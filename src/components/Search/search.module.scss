@@ -1,0 +1,34 @@
+@import "../../styles/typography/typography";
+@import "../../styles/color/color";
+@import "../../styles/button/button";
+
+.search-box {
+    border: 1px $Highlighter3 solid;
+    width: 100%;
+    height: 48px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    @include text-18-400;
+    display: flex;
+    align-items: center;
+    .search-input {
+        border: none;
+        margin-left: 16px;
+        color: $Highlighter3;
+        flex: 1;
+        width: 100%;
+
+        &:focus-visible {
+            border: none;
+            outline: 0px;
+        }
+
+        &::placeholder {
+            color: $Highlighter4;
+        }
+
+        @media only screen and (max-width: 312px) {
+            width: 80%;
+        }
+    }
+}

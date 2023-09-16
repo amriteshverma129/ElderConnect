@@ -1,0 +1,408 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.library-card-image-overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent, transparent);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.library-card-tag {
+    z-index: 2;
+    @include tag;
+    position: absolute;
+    background-color: $White;
+    border-radius: 20px;
+    color: $Highlighter3;
+    top: 20px;
+    right: 30px;
+}
+
+.library-card {
+    width: 100%;
+    background: $White;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .library-card-image {
+        width: 100%;
+        aspect-ratio: 16/10;
+        position: relative;
+        cursor: pointer;
+        img {
+            z-index: 1;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .library-card-rating {
+            z-index: 2;
+            position: absolute;
+            bottom: 24px;
+            left: 16px;
+        }
+        .library-card-time {
+            z-index: 2;
+            position: absolute;
+            bottom: 20px;
+            right: 16px;
+            color: $White;
+            @include font(18px, 500, 32px);
+        }
+    }
+    .library-card-content {
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        .library-card-title {
+            @include text-32-700;
+            color: $Highlighter3;
+            margin-bottom: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            flex: 1;
+            @media only screen and (max-width: 576px) {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        .library-card-date-like-holder {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .library-card-date {
+                @include text-18-600;
+                color: $Highlighter3;
+                @media only screen and (min-width: 1024px) and (max-width: 1250px) {
+                    @include font(15px, 500, 25px);
+                }
+
+                @media only screen and (max-width: 576px) {
+                    @include font(15px, 500, 25px);
+                }
+            }
+            .library-card-like {
+                @include text-18-600;
+                color: $Highlighter3;
+                @media only screen and (min-width: 1024px) and (max-width: 1250px) {
+                    @include font(15px, 500, 25px);
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+
+                @media only screen and (max-width: 576px) {
+                    @include font(15px, 500, 25px);
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1250px) {
+            padding: 10px;
+        }
+        @media only screen and (max-width: 576px) {
+            padding: 10px;
+        }
+    }
+
+    &:hover {
+        box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        .library-card-image {
+            img {
+                opacity: 0.8;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
+
+.library-card-1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    border-bottom: 4px solid $Highlighter3;
+    padding-bottom: 20px;
+    align-items: center;
+    .library-card-image {
+        width: 12%;
+        aspect-ratio: 16/10;
+        position: relative;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        .library-card-tag {
+            z-index: 2;
+            @include tag;
+            position: absolute;
+            background-color: $White;
+            border-radius: 20px;
+            color: $Highlighter3;
+            top: 20px;
+            right: 16px;
+            display: none;
+            @media only screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+        .library-card-time {
+            @include flex(center, center);
+            z-index: 2;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            color: $White;
+            @include font(12px, 500, 22px);
+            svg {
+                height: 24px;
+                width: 24px;
+            }
+            @media only screen and (max-width: 768px) {
+                bottom: 20px;
+                right: 16px;
+                @include font(18px, 500, 32px);
+                svg {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
+        .library-card-like {
+            z-index: 2;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            color: $White;
+            @include flex(center, center);
+            @include font(12px, 500, 22px);
+            svg {
+                height: 24px;
+                width: 24px;
+            }
+            @media only screen and (max-width: 768px) {
+                bottom: 20px;
+                left: 16px;
+                @include font(18px, 500, 32px);
+                svg {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
+        img {
+            z-index: 1;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        @media only screen and (max-width: 1470px) {
+            width: 14%;
+        }
+        @media only screen and (max-width: 1250px) {
+            width: 16%;
+        }
+        @media only screen and (max-width: 1100px) {
+            width: 18%;
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 20%;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            aspect-ratio: 14/8;
+            max-width: none;
+        }
+        &:hover {
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            img {
+                opacity: 0.8;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    .library-card-content {
+        padding-left: 30px;
+        position: relative;
+        width: 100%;
+        .library-card-title {
+            @include text-26-700;
+            color: $Highlighter3;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            flex: 1;
+            cursor: pointer;
+            @media only screen and (max-width: 1024px) {
+                @include text-24-700;
+                margin-bottom: 8px;
+            }
+            @media only screen and (max-width: 768px) {
+                span {
+                    display: none;
+                }
+            }
+        }
+        .library-card-Time-like-holder {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            @include text-18-600;
+            margin-bottom: 8px;
+            .library-card-date {
+                @include font(18px, 700, 28px);
+                display: block;
+                color: $Primary;
+            }
+            @media only screen and (max-width: 1024px) {
+                @include font(16px, 600, 26px);
+                gap: 18px;
+            }
+            @media only screen and (max-width: 768px) {
+                @include font(14px, 600, 26px);
+                gap: 12px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            padding-left: 20px;
+        }
+        @media only screen and (max-width: 768px) {
+            padding-left: 0px;
+            padding-top: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.library-card-holder-grid-style {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    @media only screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media only screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
+}
+
+.library-card-holder-list-style {
+    margin-top: 40px;
+    @media only screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
+}
+
+.library-card-holder-skeleton {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    @media only screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media only screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
+    .library-card-skeleton {
+        width: 100%;
+        .library-card-image-skeleton {
+            width: 100%;
+            aspect-ratio: 16/10;
+        }
+    }
+}
+
+.library-card-holder-list-skeleton {
+    margin-top: 40px;
+    @media only screen and (max-width: 576px) {
+        margin-top: 20px;
+    }
+    .library-card-skeleton {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        border-bottom: 4px solid $Borders;
+        padding-bottom: 20px;
+        align-items: center;
+        .library-card-image-skeleton {
+            width: 12%;
+            aspect-ratio: 16/10;
+            position: relative;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            @media only screen and (max-width: 1024px) {
+                width: 20%;
+            }
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        .library-card-content-skeleton {
+            padding-left: 30px;
+            position: relative;
+            width: 100%;
+            @media only screen and (max-width: 768px) {
+                padding-left: 20px;
+            }
+            @media only screen and (max-width: 768px) {
+                padding-left: 0px;
+                padding-top: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+}

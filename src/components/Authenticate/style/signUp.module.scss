@@ -1,0 +1,72 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+@import "../../../styles/form/form";
+
+.signUp {
+    @include form-container;
+    .signUp-form {
+        @include form;
+        position: relative;
+        .signUp-back-btn {
+            position: absolute;
+            background: transparent;
+            border: 0;
+            font-size: 20px;
+            padding: 0;
+            color: #142c60;
+            cursor: pointer;
+            top: 20px;
+        }
+        .signUp-heading {
+            @include form-heading;
+            margin-bottom: 0px;
+        }
+        .signUp-field {
+            padding-bottom: 20px;
+            position: relative;
+            label {
+                @include form-label;
+            }
+            .signUp-notice {
+                text-align: center;
+                text-decoration: underline;
+                color: $Highlighter3;
+                cursor: pointer;
+                transition: 0.3s ease;
+                width: fit-content;
+                margin: auto;
+                &:hover {
+                    color: $Primary;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+        .signUp-checkBox {
+            @include form-checkbox;
+            .signUp-termsCondition,
+            .signUp-fitnessWaiver {
+                display: inline-block;
+                margin-left: 5px;
+                margin-right: 5px;
+                text-decoration: underline;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                    color: $Primary;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+        .signUp-field-link {
+            padding-bottom: 0;
+        }
+        .signUp-submit {
+            @include form-submit;
+        }
+        .signUp-link {
+            @include form-link;
+            margin-bottom: 12px;
+        }
+    }
+}

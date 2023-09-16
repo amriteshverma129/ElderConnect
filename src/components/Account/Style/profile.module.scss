@@ -1,0 +1,205 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+@import "../../../styles/form/form";
+
+.profile {
+    @include grid(1fr 3fr, 0.5fr 2.5fr, 1fr, 30px);
+    .profile-avatar-or-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media screen and (max-width: 768px) {
+            align-items: center;
+        }
+        .profile-avatar {
+            font-size: 64px;
+            @media only screen and (max-width: 768px) {
+                justify-content: center;
+                margin-right: 0;
+            }
+
+            > div {
+                @media screen and (max-width: 576px) {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .profile-delete-icon {
+                position: absolute;
+                bottom: 7px;
+                right: 7px;
+                background-color: $White;
+                padding: 5px;
+                border-radius: 50px;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $Dark;
+                cursor: pointer;
+                @media screen and (max-width: 576px) {
+                    height: 30px;
+                    width: 30px;
+                    bottom: 3px;
+                    right: 3px;
+                }
+                > span {
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    svg {
+                        height: 30px;
+                        width: 30px;
+                        @include justify-center();
+                        @media screen and (max-width: 576px) {
+                            height: 22px;
+                            width: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        .profile-change-heading {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            @include text-20-500;
+            @include btn-link;
+            cursor: pointer;
+            color: $Highlighter3;
+            @media screen and (max-width: 576px) {
+                @include text-18-500;
+            }
+        }
+    }
+    .profile-label {
+        @include form-label;
+    }
+    .profile-form {
+        max-width: 530px;
+        @media only screen and (max-width: 1368px) {
+            max-width: 100%;
+        }
+        .infusion-form {
+            .infusion-submit {
+                button {
+                    @include btn-normal;
+                    @include btn-solid(fit-content, $Highlighter3);
+                    margin-top: 30px;
+                    margin-bottom: 70px;
+                    @include text-18-600;
+                    @media only screen and (max-width: 1368px) {
+                        margin-bottom: 50px;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        margin: 20px 0;
+                    }
+                    @media only screen and (max-width: 576px) {
+                        @include btn-solid(100%, $Highlighter3);
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .profile-deactive-btn-holder {
+            @include flex(flex-start, space-between);
+            width: 100%;
+            margin-bottom: 200px;
+            @media only screen and (max-width: 1368px) {
+                margin-bottom: 50px;
+            }
+            h1 {
+                @include text-32-500;
+                color: $Highlighter3;
+                margin-bottom: 10px;
+                @media only screen and (max-width: 576px) {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            h3 {
+                @include text-20-400;
+                color: $Highlighter4;
+                margin-bottom: 0;
+                @media only screen and (max-width: 576px) {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            .profile-btn-deactivate {
+                padding: 10px 16px;
+                @include btn-outline(fit-content, $Primary, 0px, self-start);
+                @include text-18-600;
+                white-space: nowrap;
+                @media only screen and (max-width: 768px) {
+                    margin: 20px 0 0 0;
+                }
+                @media only screen and (max-width: 576px) {
+                    @include btn-outline(100%, $Primary);
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+    }
+    .profile-date {
+        padding-bottom: 12px;
+        label {
+            @include form-label;
+        }
+    }
+}
+
+.profile-card-holder-skeleton {
+    @include grid(1fr 3fr, 0.5fr 2.5fr, 1fr, 30px);
+    .profile-card-image-skeleton {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media screen and (max-width: 768px) {
+            align-items: center;
+        }
+    }
+    .profile-card-skeleton-form {
+        max-width: 530px;
+        @media only screen and (max-width: 1368px) {
+            max-width: 100%;
+        }
+        .profile-skeleton-submit-button {
+            width: 200px;
+            margin-bottom: 70px;
+            @media only screen and (max-width: 1368px) {
+                margin-bottom: 50px;
+            }
+            @media only screen and (max-width: 768px) {
+                margin: 20px 0;
+            }
+            @media only screen and (max-width: 576px) {
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .profile-skeleton-deactive-btn-holder {
+            @include flex(flex-start, space-between);
+            width: 100%;
+            margin-bottom: 200px;
+            @media only screen and (max-width: 1368px) {
+                margin-bottom: 50px;
+            }
+            .profile-skeleton-deactivate-button {
+                width: 200px;
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 576px) {
+                flex-direction: column;
+            }
+        }
+    }
+}

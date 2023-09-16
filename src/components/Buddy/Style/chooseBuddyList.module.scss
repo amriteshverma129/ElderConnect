@@ -1,0 +1,39 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/color/color";
+@import "../../../styles/button/button";
+
+.chooseBuddyPage-heading {
+    @include text-48-700;
+    color: $Highlighter3;
+    margin-top: 35px;
+    @media screen and (max-width: 576px) {
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+.choose-buddy-list {
+    margin-top: 56px;
+    @media only screen and (max-width: 1024px) {
+        margin-top: 40px;
+    }
+    @media only screen and (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+.infusion-form {
+    padding: 20px 0;
+    input[type="radio"] {
+        display: none;
+    }
+    .infusion-submit {
+        display: flex;
+        justify-content: center;
+        button {
+            @include btn-solid(280px, $Primary);
+            @include btn-normal;
+            @media screen and (max-width: 576px) {
+                width: 100%;
+            }
+        }
+    }
+}
